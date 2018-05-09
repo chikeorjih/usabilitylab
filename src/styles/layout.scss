@@ -1,0 +1,33 @@
+.header, .content{
+    margin: 0 auto;
+    max-width: 46rem;
+    padding: 1.25rem 1rem 0;
+}
+
+.header-wrapper {
+    background: $brand-primary-color;
+}
+
+.header {
+    background: $brand-primary-color;
+
+    .logo {
+        color: $color-white;
+        text-decoration: none;
+    }
+
+    h2 {
+        margin: 0;
+        font-size: 1.6rem;
+
+        .sub {
+            font-weight: 400;
+            color: $brand-primary-light;
+            font-size: 1.15rem;
+        }
+    }
+}
+
+.content {
+    padding-top: 2rem;
+}

@@ -1,0 +1,21 @@
+.nav {
+    margin: 1rem 0 0;
+}
+
+.nav-item {
+    display: inline-block;
+    margin: 0;
+    
+    a {
+        display: block;
+        color: $brand-primary-light;
+        text-decoration: none;
+        padding: 0 1rem .5rem;
+        font-size: .9rem;
+    }
+
+    a.active {
+        color: $color-white;
+        border-bottom: 4px solid $brand-color-yellow;
+    }
+}
