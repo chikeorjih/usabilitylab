@@ -1,0 +1,37 @@
+.bar-chart {
+    height: 1rem;
+    background: $color-light-gray;
+    border-radius: .3rem;
+    position: relative;
+    margin: 1.4rem .5rem;
+
+    .bar {
+        height: 100%;
+        display: block;
+        border-top-left-radius: .3rem;
+        border-bottom-left-radius: .3rem;
+        position: relative;
+
+        .score {
+            position: absolute;
+            right: 0;
+            top: -1.8rem;
+            font-weight: bold;
+            font-size: 1.3rem;
+        }
+    }
+
+    .initial, .total {
+        position: absolute;
+        top: 1rem;
+        color: $text-color-gray;
+    }
+
+    .initial {
+        left: 0;
+    }
+
+    .total {
+        right: 0;
+    }
+}
