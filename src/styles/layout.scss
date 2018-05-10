@@ -1,3 +1,7 @@
+h2 {
+    margin: 2rem 0 1rem;
+}
+
 .header, .content{
     margin: 0 auto;
     max-width: 46rem;
@@ -52,5 +56,11 @@ table {
         display: block;
         font-size: .8rem;
         color: $text-color-gray;
+    }
+}
+
+.expandable {
+    h3 {
+        font-size: .9rem;
     }
 }
