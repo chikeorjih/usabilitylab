@@ -34,12 +34,12 @@ class Expandable extends React.Component{
 
     render() {
         const expandableDisplay = this.state.isExpanded ? 'block' : 'none';
-        const buttonText = this.state.isExpanded ? '+' : '-';
+        const buttonText = this.state.isExpanded ? 'Collapse' : 'Expand';
 
         return (
             <div className="expandable">
                 <div className="expandable-initial">
-                    <div className="number"><span>1</span></div>
+                    <div className="number"><span>{this.props.number}</span></div>
                     <h3>{this.state.title}</h3>
                     <button onClick={this.handleToggle.bind(this)}>{buttonText}</button>
                 </div>
@@ -51,8 +51,8 @@ class Expandable extends React.Component{
     }
 };
 
-// Expandable.PropTypes = {
-//     config: React.PropTypes.object
-// };
+Expandable.PropTypes = {
+    number: React.PropTypes.string
+};
 
 export default Expandable;

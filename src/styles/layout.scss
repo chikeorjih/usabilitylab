@@ -61,11 +61,13 @@ table {
 
 .expandable {
     border: 1px solid $brand-primary-light;
-    padding:1rem;
+    margin: 1rem 0;
+    box-shadow: 0px 1px 5px $color-gray;
 
     .expandable-initial {
         display: flex;
         align-items: center;
+        padding:1rem;
     }
 
     .number {
@@ -90,13 +92,21 @@ table {
          font-size: 1rem;
          font-weight: normal;
          margin: 0 .1rem;
+         flex: auto;
      }
  
      button {
          height: 2rem;
          background: $color-white;
          border: 1px solid $brand-primary-color;
-         margin: 1rem;
+         margin: .5rem;
          flex-basis: 2rem;
+         font-size: .8rem;
+         cursor: pointer;
+     }
+
+     .expandable-content {
+        padding:1rem;
+        background: $color-light-gray;
      }
 }
