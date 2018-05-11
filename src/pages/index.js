@@ -1,6 +1,5 @@
 import React from "react";
 import ShowHide from "../components/ShowHide";
-import BarChart from "../components/BarChart";
 import Expandable from "../components/Expandable";
 
 export default () => (
@@ -83,7 +82,6 @@ export default () => (
       </ul>
       <p>In the next section, we will give an overview of the top usability challenges and opportunities we identified for HMSA.com. This top-line report is an initial view into the problems and challenges that were trends across participants. It will be followed with a details report of findings and recommendations.</p>
     </ShowHide>
-    {/* <BarChart config={{initial: 0, score: 8, total: 10, color: "#ff9108"}}/> */}
     <h2>Insights</h2>
     <Expandable number='1'>
       <h3>Consumers expect to easily choose the right coverage and control the monthly premium they pay (aka“the price”)</h3>

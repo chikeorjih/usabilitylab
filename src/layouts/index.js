@@ -2,13 +2,15 @@ import React from "react";
 import Link from "gatsby-link";
 import "../styles/styles.scss"
 
+import heroImage from "../assets/people-computer.svg";
+
 const ListLink = props =>
   <li className="nav-item">
     <Link exact to={props.to} activeClassName="active">
       {props.children}
     </Link>
   </li>;
-
+console.log(heroImage);
 export default ({ children }) => (
     <div>
         <div className="header-wrapper">
@@ -22,6 +24,7 @@ export default ({ children }) => (
               <ListLink to="/participants/">Participants</ListLink>
               <ListLink to="/appendix/">Appendix</ListLink>
             </ul>
+            <img className="hero-image" src={heroImage} alt="gero image"/>
           </header>
         </div>
         <div className="content-wrapper">

@@ -40,7 +40,7 @@ class Expandable extends React.Component{
             <div className="expandable">
                 <div className="expandable-initial">
                     <div className="number"><span>{this.props.number}</span></div>
-                    <h3>{this.state.title}</h3>
+                    <p className="title">{this.state.title}</p>
                     <button onClick={this.handleToggle.bind(this)}>{buttonText}</button>
                 </div>
                 <div className="expandable-content" style={{ display: expandableDisplay }}>

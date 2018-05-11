@@ -1,8 +1,8 @@
 import Typography from "typography";
-import noriega from "typography-theme-noriega";
+import fairyGates from "typography-theme-fairy-gates";
 
-noriega.baseFontSize = '16px';
+fairyGates.baseFontSize = '16px';
 
-const typography = new Typography(noriega);
+const typography = new Typography(fairyGates);
 
 export default typography;
