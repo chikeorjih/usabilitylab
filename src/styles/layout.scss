@@ -60,38 +60,43 @@ table {
 }
 
 .expandable {
-    display: flex;
-    align-items: center;
+    border: 1px solid $brand-primary-light;
+    padding:1rem;
+
+    .expandable-initial {
+        display: flex;
+        align-items: center;
+    }
 
     .number {
-       display: flex;
-       flex-basis: 2rem;
-       justify-content: center; 
-       margin: 0 1rem;
-
-        span {
-            color: $brand-color-orange;
-            font-weight: bold;
-            background: $brand-color-orange-light;
-            border: 2px solid $brand-color-orange;
-            border-radius: 50%;
-            width: 1.9rem;
-            height: 1.9rem;
-            text-align: center;
-        }
-    }
-
-    h3 {
-        font-size: 1rem;
-        font-weight: normal;
-        margin: 0 .1rem;
-    }
-
-    button {
-        height: 2rem;
-        background: $color-white;
-        border: 1px solid $brand-primary-color;
-        margin: 1rem;
+        display: flex;
         flex-basis: 2rem;
-    }
+        justify-content: center; 
+        margin: 0 1rem;
+ 
+         span {
+             color: $brand-color-orange;
+             font-weight: bold;
+             background: $brand-color-orange-light;
+             border: 2px solid $brand-color-orange;
+             border-radius: 50%;
+             width: 1.9rem;
+             height: 1.9rem;
+             text-align: center;
+         }
+     }
+ 
+     h3 {
+         font-size: 1rem;
+         font-weight: normal;
+         margin: 0 .1rem;
+     }
+ 
+     button {
+         height: 2rem;
+         background: $color-white;
+         border: 1px solid $brand-primary-color;
+         margin: 1rem;
+         flex-basis: 2rem;
+     }
 }

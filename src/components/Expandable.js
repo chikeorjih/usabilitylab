@@ -34,11 +34,11 @@ class Expandable extends React.Component{
 
     render() {
         const expandableDisplay = this.state.isExpanded ? 'block' : 'none';
-        const buttonText = this.state.isExpanded ? 'Collapse' : 'Expand';
+        const buttonText = this.state.isExpanded ? '+' : '-';
 
         return (
-            <div>
-                <div className="expandable">
+            <div className="expandable">
+                <div className="expandable-initial">
                     <div className="number"><span>1</span></div>
                     <h3>{this.state.title}</h3>
                     <button onClick={this.handleToggle.bind(this)}>{buttonText}</button>
