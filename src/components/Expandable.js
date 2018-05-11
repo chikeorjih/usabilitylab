@@ -6,38 +6,45 @@ class Expandable extends React.Component{
     constructor(props) {
         super(props);
 
-        this.state = {
-            // title: this.props.title,
-            // hiddenContent:,
-            // isExpanded: false,
-        };
-    }
-
-    handleToggle() {
-        // const isExpanded = !this.state.isExpanded;
-
-        // this.setState({
-        //     isExpanded,
-        //     text: isExpanded ? this.props.children : `${this.props.children[0].props.children.substring(0, this.props.config.trim)}...`,
-        // });
-    }
-
-    render() {
         let title = '';
         let content = '';
 
         this.props.children.forEach((child) => {
-            title = child.type === 'h3' ? child.props.children: '';
-            content = child.type === 'div' ? child.props.children: '';
+            if (child.type === 'h3'){
+                title = child.props.children;
+            } else if (child.type === 'div') {
+                content = child.props.children;
+            }
         });
 
+        this.state = {
+            title,
+            content,
+            isExpanded: false,
+        };
+    }
+
+    handleToggle() {
+        const isExpanded = !this.state.isExpanded;
+
+        this.setState({
+            isExpanded
+        });
+    }
+
+    render() {
+        const expandableDisplay = this.state.isExpanded ? 'block' : 'none';
+        const buttonText = this.state.isExpanded ? 'Collapse' : 'Expand';
+
         return (
-            <div className="expandable">
-                <span>1</span>
-                {title}
-                <button>Expand</button>
-                <div>
-                    {content}
+            <div>
+                <div className="expandable">
+                    <div className="number"><span>1</span></div>
+                    <h3>{this.state.title}</h3>
+                    <button onClick={this.handleToggle.bind(this)}>{buttonText}</button>
+                </div>
+                <div className="expandable-content" style={{ display: expandableDisplay }}>
+                    {this.state.content}
                 </div>
             </div>
         );
