@@ -33,17 +33,17 @@ class Expandable extends React.Component{
     }
 
     render() {
-        const expandableDisplay = this.state.isExpanded ? 'block' : 'none';
+        const expandableCss = this.state.isExpanded ? 'expanded' : 'collapsed';
         const buttonText = this.state.isExpanded ? 'Collapse' : 'Expand';
 
         return (
-            <div className="expandable">
+            <div className={`expandable ${expandableCss}`}>
                 <div className="expandable-initial">
                     <div className="number"><span>{this.props.number}</span></div>
                     <p className="title">{this.state.title}</p>
                     <button onClick={this.handleToggle.bind(this)}>{buttonText}</button>
                 </div>
-                <div className="expandable-content" style={{ display: expandableDisplay }}>
+                <div className={`expandable-content ${expandableCss}`}>
                     {this.state.content}
                 </div>
             </div>

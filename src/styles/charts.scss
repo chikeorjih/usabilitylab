@@ -1,23 +1,22 @@
 .bar-chart {
-    height: 1rem;
+    height: .8rem;
     background: $color-light-gray;
     border-radius: .3rem;
     position: relative;
-    margin: 1.2rem .5rem;
+    margin: .8rem .5rem;
 
     .bar {
         height: 100%;
         display: block;
-        border-top-left-radius: .3rem;
-        border-bottom-left-radius: .3rem;
+        border-radius: .3rem;
         position: relative;
 
         .score {
             position: absolute;
-            right: -.6rem;
-            top: -1.4rem;
+            right: -.2rem;
+            top: -1.2rem;
             font-weight: bold;
-            font-size: 1.1rem;
+            font-size: .9rem;
         }
     }
 
