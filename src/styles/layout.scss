@@ -88,9 +88,7 @@ table {
 }
 
 .expandable {
-    border: 1px solid $brand-primary-light;
-    margin: 1rem 0;
-    box-shadow: 0px 1px 5px $color-gray;
+    @include card;
     transition: all 0.3s ease-in-out;
 
     .expandable-initial {

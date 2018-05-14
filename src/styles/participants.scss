@@ -1,7 +1,11 @@
 .participants {
+    display: flex;
 
     .participant {
+        @include card;
+
         display: flex;
+        flex: 0 2 auto;
         padding: 1.5rem;
         border: 1px solid $brand-primary-light;
         align-items: center;
@@ -16,5 +20,12 @@
         h4 {
             margin: .5rem 0;
         }
+    }
+}
+
+@media (max-width: $screen-phone) {
+    .participants {
+        display: block;
+
     }
 }

@@ -8,6 +8,7 @@ export default () => (
     <h2>Under 65</h2>
     <div className="participants">
       <Participant img={participant1}/>
+      <Participant img={participant1}/>
     </div>
     <h2>Over 65</h2>
     <p>
