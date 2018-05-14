@@ -94,7 +94,7 @@ table {
     .expandable-initial {
         display: flex;
         align-items: center;
-        padding:1rem;
+        padding: 1rem;
         transition: all 0.1s ease-in-out;
     }
 
@@ -147,7 +147,7 @@ table {
             max-height: 0;
             visibility: hidden;
             position: relative;
-            padding: 0;
+            padding:  0 1.5rem;
             opacity: 0;
         }
 

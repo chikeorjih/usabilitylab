@@ -1,15 +1,13 @@
 import React from "react";
 import Link from "gatsby-link";
 import Participant from "../components/participant";
-import participantData from "../data/participants";
+import { getYoungParticipants, getMedicareParticipants } from "../util/participant";
+import ParticipantList from "../data/participants";
 
-const youngParticipantData = participantData.filter(person => person.age < 65);
-const youngParticipants = youngParticipantData.map((person, index) => {
+const youngParticipants = ParticipantList.youngParticipants.map((person, index) => {
   return <Participant key={index} person={person} />;
 });
-
-const medicareParticipantData = participantData.filter(person => person.age >= 65);
-const medicareParticipants = medicareParticipantData.map((person, index) => {
+const medicareParticipants = ParticipantList.medicareParticipants.map((person, index) => {
   return <Participant key={index} person={person} />;
 });
 
