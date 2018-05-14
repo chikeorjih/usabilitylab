@@ -6,7 +6,7 @@ import heroImage from "../assets/people-computer.svg";
 
 const ListLink = props =>
   <li className="nav-item">
-    <Link exact to={props.to} activeClassName="active">
+    <Link to={props.to} activeClassName="active">
       {props.children}
     </Link>
   </li>;
