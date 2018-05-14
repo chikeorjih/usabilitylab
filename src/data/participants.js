@@ -7,6 +7,7 @@ export default [
         gender: 'Female',
         age: 27,
         occupation: 'Lifeguard',
+        url: 'ashleyl',
         img: participant1,
         providers: {
             aetna: 1,
@@ -25,6 +26,7 @@ export default [
         gender: 'Male',
         age: 68,
         occupation: 'Retired',
+        url: 'dennisl',
         img: participant7,
         providers: {
             aetna: 3,
