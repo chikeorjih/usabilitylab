@@ -12,6 +12,10 @@ module.exports = {
       options: {
         pathToConfigModule: `src/utils/typography.js`,
       }
-    }
+    },
+    {
+      resolve: `gatsby-plugin-create-client-paths`,
+      options: { prefixes: [`/participants/participant/*`] },
+    },
   ],
 }
