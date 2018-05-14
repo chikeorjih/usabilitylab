@@ -1,0 +1,20 @@
+.participants {
+
+    .participant {
+        display: flex;
+        padding: 1.5rem;
+        border: 1px solid $brand-primary-light;
+        align-items: center;
+
+        img {
+            width: 2.5rem;
+            height:2.5rem;
+            border-radius: 50%;
+            margin: 1rem;
+        }
+
+        h4 {
+            margin: .5rem 0;
+        }
+    }
+}
