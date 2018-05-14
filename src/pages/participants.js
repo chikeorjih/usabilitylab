@@ -1,7 +1,7 @@
 import React from "react";
 import Participant from "../components/Participant";
 
-import participant1 from "../assets/participants/participant1.jpg";
+import participant1 from "../assets/participants/participant1.png";
 
 export default () => (
   <div>

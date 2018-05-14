@@ -4,21 +4,38 @@
     .participant {
         @include card;
 
-        display: flex;
-        flex: 0 2 auto;
-        padding: 1.5rem;
+        display: block;
+        padding: 2rem 1rem;
+        margin: 1rem;
         border: 1px solid $brand-primary-light;
-        align-items: center;
+        text-align: center;
 
         img {
-            width: 2.5rem;
-            height:2.5rem;
+            width: 3rem;
+            height: 3rem;
             border-radius: 50%;
-            margin: 1rem;
+            margin: 0;
         }
 
         h4 {
-            margin: .5rem 0;
+            margin: .5rem 0 1.5rem;
+        }
+
+        span {
+            display: block;
+        }
+
+        .info {
+            margin: 0 1rem;
+        }
+
+        .label {
+            display: inline;
+            font-size: .9rem;
+        }
+
+        strong {
+            margin-left: .5rem;
         }
     }
 }
@@ -27,5 +44,42 @@
     .participants {
         display: block;
 
+        .participant {
+            padding: .5rem 1rem;
+            margin: 1rem 0;
+            display: flex;
+            flex: 0 2 auto;
+            align-items: center;
+            text-align: left;
+
+            img {
+                width: 2.5rem;
+                height: 2.5rem;
+                margin: 1rem;
+            }
+
+            h4 {
+                margin: .5rem 0;
+            }
+    
+            span {
+                display: flex;
+            }
+    
+            .info {
+                margin: 0 1rem;
+            }
+    
+            .label {
+                display: flex;
+                flex: 0 1 6rem;
+                font-size: .9rem;
+            }
+    
+            strong {
+                margin-left: 1.5rem;
+                flex: 0 1 5rem;
+            }
+        }
     }
 }
