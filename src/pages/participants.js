@@ -1,7 +1,6 @@
 import React from "react";
 import Link from "gatsby-link";
 import Participant from "../components/participant";
-import { getYoungParticipants, getMedicareParticipants } from "../util/participant";
 import ParticipantList from "../data/participants";
 
 const youngParticipants = ParticipantList.youngParticipants.map((person, index) => {
