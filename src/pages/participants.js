@@ -1,17 +1,27 @@
 import React from "react";
-import Participant from "../components/Participant";
+import Link from "gatsby-link";
+import Participant from "../components/participant";
+import participantData from "../data/participants";
 
-import participant1 from "../assets/participants/participant1.png";
+const youngParticipantData = participantData.filter(person => person.age < 65);
+const youngParticipants = youngParticipantData.map((person, index) => {
+  return <Participant key={index} person={person} />;
+});
+
+const medicareParticipantData = participantData.filter(person => person.age >= 65);
+const medicareParticipants = medicareParticipantData.map((person, index) => {
+  return <Participant key={index} person={person} />;
+});
 
 export default () => (
   <div>
     <h2>Under 65</h2>
     <div className="participants">
-      <Participant img={participant1}/>
-      <Participant img={participant1}/>
+      {youngParticipants}
     </div>
     <h2>Over 65</h2>
-    <p>
-    </p>
+    <div className="participants">
+      {medicareParticipants}
+    </div>
   </div>
 );

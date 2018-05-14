@@ -4,18 +4,22 @@ import PropTypes from 'prop-types';
 
 const Participant = (props) => {
     return (
-        <Link to="/participant" className="profile-link">
+        <Link to={{ pathname: "/participant", person: props.person}} className="profile-link">
             <div className="participant">
-                <img src={props.img} alt="participant1"/>
+                <img src={props.person.img} alt="participant1"/>
                 <div className="info">
-                    <h4>Ashley A.</h4>
-                    <span><span className="label">Gender:</span><strong>Female</strong></span>
-                    <span><span className="label">Age:</span><strong>27</strong></span>
-                    <span><span className="label">Occupation:</span><strong>Lifegaurd</strong></span>
+                    <h4>{props.person.name}</h4>
+                    <span><span className="label">Gender:</span><strong>{props.person.gender}</strong></span>
+                    <span><span className="label">Age:</span><strong>{props.person.age}</strong></span>
+                    <span><span className="label">Occupation:</span><strong>{props.person.occupation}</strong></span>
                 </div>
             </div>
         </Link>
     );
+};
+
+Participant.PropTypes = {
+    person: React.PropTypes.object
 };
  
 export default Participant;
