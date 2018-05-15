@@ -33,7 +33,7 @@ class ShowHide extends React.Component {
     }
 }
 
-ShowHide.PropTypes = {
+ShowHide.propTypes = {
     config: PropTypes.object
 };
 

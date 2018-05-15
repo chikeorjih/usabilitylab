@@ -18,7 +18,7 @@ const Participant = (props) => {
     );
 };
 
-Participant.PropTypes = {
+Participant.propTypes = {
     person: PropTypes.object
 };
  

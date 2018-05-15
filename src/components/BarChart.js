@@ -16,7 +16,7 @@ const BarChart = (props) => {
     );
 };
 
-BarChart.PropTypes = {
+BarChart.propTypes = {
     config: PropTypes.shape({
         initial: PropTypes.number,
         color: PropTypes.string,

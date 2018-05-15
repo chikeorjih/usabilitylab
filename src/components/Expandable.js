@@ -3,13 +3,13 @@ import PropTypes from 'prop-types';
 
 
 class Expandable extends React.Component {
-    constructor() {
+    constructor(props) {
         super();
 
         let title = '';
         let content = '';
 
-        this.props.children.forEach((child) => {
+        props.children.forEach((child) => {
             if (child.type === 'h3'){
                 title = child.props.children;
             } else if (child.type === 'div') {
@@ -51,7 +51,7 @@ class Expandable extends React.Component {
     }
 }
 
-Expandable.PropTypes = {
+Expandable.propTypes = {
     number: PropTypes.string
 };
 
