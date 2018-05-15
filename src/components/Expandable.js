@@ -24,7 +24,7 @@ class Expandable extends React.Component {
         };
     }
 
-    handleToggle() {
+    handleToggle = () => {
         const isExpanded = !this.state.isExpanded;
 
         this.setState({
@@ -41,7 +41,7 @@ class Expandable extends React.Component {
                 <div className="expandable-initial">
                     <div className="number"><span>{this.props.number}</span></div>
                     <p className="title">{this.state.title}</p>
-                    <button onClick={this.handleToggle.bind(this)}>{buttonText}</button>
+                    <button onClick={this.handleToggle}>{buttonText}</button>
                 </div>
                 <div className={`expandable-content ${expandableCss}`}>
                     {this.state.content}
