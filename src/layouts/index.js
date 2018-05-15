@@ -15,11 +15,11 @@ export default ({ children }) => (
     <div>
         <div className="header-wrapper">
           <header className="header">
-            <Link to="/" className="logo">
+            <Link to="/summary/" className="logo">
               <h2>HMSA <span className="sub"> | Usability Lab</span></h2>
             </Link>
             <ul className="nav">
-              <ListLink to="/">Summary</ListLink>
+              <ListLink to="/summary/">Summary</ListLink>
               <ListLink to="/tasks/">Tasks</ListLink>
               <ListLink to="/participants/">Participants</ListLink>
               <ListLink to="/appendix/">Appendix</ListLink>
