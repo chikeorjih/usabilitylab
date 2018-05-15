@@ -1,5 +1,4 @@
 import React from "react";
-import Link from "gatsby-link";
 import Participant from "../components/participant";
 import ParticipantList from "../data/participants";
 
