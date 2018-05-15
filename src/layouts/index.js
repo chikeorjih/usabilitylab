@@ -12,17 +12,18 @@ const ListLink = props => (
   </li>
 );
 
+export default ({ children } = {}) => (
     <div>
         <div className="header-wrapper">
           <header className="header">
-            <Link to="/summary/" className="logo">
+            <Link to="/summary" className="logo">
               <h2>HMSA <span className="sub"> | Usability Lab</span></h2>
             </Link>
             <ul className="nav">
-              <ListLink to="/summary/">Summary</ListLink>
-              <ListLink to="/tasks/">Tasks</ListLink>
-              <ListLink to="/participants/">Participants</ListLink>
-              <ListLink to="/appendix/">Appendix</ListLink>
+              <ListLink to="/summary">Summary</ListLink>
+              <ListLink to="/tasks">Tasks</ListLink>
+              <ListLink to="/participants">Participants</ListLink>
+              <ListLink to="/appendix">Appendix</ListLink>
             </ul>
             <img className="hero-image" src={heroImage} alt="gero image"/>
           </header>
