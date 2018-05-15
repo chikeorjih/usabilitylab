@@ -1,5 +1,5 @@
 import React from "react";
-import ParticipantList from "../../data/participants";
+import ParticipantList from "../../data/participant-list";
 
 const participant = (props) => {
     const currentParticipantName = props.location.pathname.split('participants/participant/')[1];

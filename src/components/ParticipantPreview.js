@@ -2,7 +2,7 @@ import React from "react";
 import Link from "gatsby-link";
 import PropTypes from 'prop-types';
 
-const Participant = (props) => {
+const ParticipantPreview = (props) => {
     return (
         <Link to={{ pathname: `participants/participant/${props.person.url}`, person: props.person}} className="profile-link">
             <div className="participant">
@@ -18,8 +18,8 @@ const Participant = (props) => {
     );
 };
 
-Participant.propTypes = {
+ParticipantPreview.propTypes = {
     person: PropTypes.object
 };
  
-export default Participant;
+export default ParticipantPreview;

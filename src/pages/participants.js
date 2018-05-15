@@ -1,12 +1,12 @@
 import React from "react";
-import Participant from "../components/participant";
-import ParticipantList from "../data/participants";
+import ParticipantPreview from "../components/ParticipantPreview";
+import ParticipantList from "../data/participant-list";
 
 const youngParticipants = ParticipantList.youngParticipants.map((person, index) => {
-  return <Participant key={index} person={person} />;
+  return <ParticipantPreview key={index} person={person} />;
 });
 const medicareParticipants = ParticipantList.medicareParticipants.map((person, index) => {
-  return <Participant key={index} person={person} />;
+  return <ParticipantPreview key={index} person={person} />;
 });
 
 export default () => (
