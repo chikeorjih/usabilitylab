@@ -3,13 +3,14 @@
     background: $color-light-gray;
     border-radius: .3rem;
     position: relative;
-    margin: .8rem .5rem;
+    margin: .8rem 2rem .8rem .5rem;
 
     .bar {
         height: 100%;
         display: block;
         border-radius: .3rem;
         position: relative;
+        animation: slide 500ms ease-out;
 
         .score {
             position: absolute;
@@ -31,6 +32,13 @@
     }
 
     .total {
-        right: 0;
+        right: -1.5rem;
+        top: -.2rem;
     }
 }
+
+@keyframes slide {
+    from {
+      width: 0;
+    }
+  }

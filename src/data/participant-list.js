@@ -11,16 +11,39 @@ class ParticipantList {
             occupation: 'Lifeguard',
             url: 'ashleyl',
             img: participant1,
-            providers: {
-                aetna: 1,
-                alohaCare: 1,
-                hmaa: 2, 
-                hmsa: 4,
-                kaiser: 4,
-                ohana: 2,
-                uha: 1,
-                uhc: 1
-            },
+            providers: [
+                { name: 'Aetna', score: 1 },
+                { name: 'AlohaCare', score: 1 },
+                { name: 'HMAA', score: 2 }, 
+                { name: 'HMSA', score: 4 },
+                { name: 'Kaiser', score: 4 },
+                { name: 'Ohana', score: 2 },
+                { name: 'UHA', score: 1 },
+                { name: 'UHC', score: 1 }
+            ],
+            tasks: [
+                {
+                    task: 'Organic',
+                    url: 'hmsa-path-to-app',
+                    completed: false,
+                    seq: 1,
+                    confidence: 1
+                },
+                {
+                    task: 'HMSA Gym Membership',
+                    url: 'hmsa-path-to-app',
+                    completed: false,
+                    seq: 5,
+                    confidence: 5
+                },
+                {
+                    task: 'HMSA Gym Membership',
+                    url: 'hmsa-path-to-app',
+                    completed: false,
+                    seq: 3,
+                    confidence: 3
+                },
+            ],
             clips: []
         },
         {
@@ -30,16 +53,39 @@ class ParticipantList {
             occupation: 'Retired',
             url: 'dennisl',
             img: participant7,
-            providers: {
-                aetna: 3,
-                alohaCare: 3,
-                hmaa: 3, 
-                hmsa: 4,
-                kaiser: 4,
-                ohana: 3,
-                uha: 3,
-                uhc: 3
-            },
+            providers: [
+                { name: 'Aetna', score: 3 },
+                { name: 'AlohaCare', score: 3 },
+                { name: 'HMAA', score: 3 }, 
+                { name: 'HMSA', score: 4 },
+                { name: 'Kaiser', score: 4 },
+                { name: 'Ohana', score: 3 },
+                { name: 'UHA', score: 3 },
+                { name: 'UHC', score: 3 }
+            ],
+            tasks: [
+                {
+                    task: 'Organic',
+                    url: 'hmsa-path-to-app',
+                    completed: false,
+                    seq: 1,
+                    confidence: 1
+                },
+                {
+                    task: 'HMSA Gym Membership',
+                    url: 'hmsa-path-to-app',
+                    completed: false,
+                    seq: 5,
+                    confidence: 5
+                },
+                {
+                    task: 'HMSA Gym Membership',
+                    url: 'hmsa-path-to-app',
+                    completed: false,
+                    seq: 3,
+                    confidence: 3
+                },
+            ],
             clips: []
         }
     ];
