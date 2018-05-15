@@ -135,7 +135,7 @@ export default () => (
       <h3>Consumers started their search for health insurance looking for their doctor – or a specialist they needed</h3>
       <div className="expandable-content">
         <p>One of the key differences between HMSA and Kaiser Permanente that consumers mentioned was the “limited” choice of physicians with latter. We observed a few participants go to the HMSA.com Find a Doctor search (from the header of any page).</p>
-        <p>Spotlighting providers who practice near the site visitor’s home (or work), based on the location of their computer or device, and providing key information (photo, specialty, office hours) may prove an effective way to acquire new members/customers. Making it easier to search for a provider as a step in selecting and purchasing a healthcare plan will create a more fluid experience for the new or returning customer.</p>
+        <p>Spotlighting providers who practice near the site visitor’s home (or work), based on the location of their computer or device, and providing key information (photo, specialty, office hours) may prove an effective way to acquire new members/customers. Making it easier to search for a provider as a step in selecting and purchasing a health care plan will create a more fluid experience for the new or returning customer.</p>
         <p>It is important to highlight and prioritize those physicians who are accepting new patients – as well as to allow visibility into when a busy, popular doctor becomes available (think of the “wish list” feature on a lot of eCommerce sites).</p>
       </div>
     </Expandable>
@@ -143,7 +143,7 @@ export default () => (
       <h3>Web page controls and calls-to-action need to be clear and unambiguous.</h3>
       <div className="expandable-content">
         <p>Both HMSA.com and kpinhawaii.com presented consumer participants with Web page content that either did not work as expected or were not controls/buttons at all .</p>
-        <p>On HMSA.com, the “Freedom to Choose” lightbox dialog (see Figure 2, below) showed a map of healthcare providers and locations in the HMSA network by default. The three tiles – Freedom to choose, Convenient care, and Travel worry free – were misunderstood by every participant who landed on this dialog.</p>
+        <p>On HMSA.com, the “Freedom to Choose” lightbox dialog (see Figure 2, below) showed a map of health care providers and locations in the HMSA network by default. The three tiles – Freedom to choose, Convenient care, and Travel worry free – were misunderstood by every participant who landed on this dialog.</p>
         <p>First, the participant would click the “Freedom to choose” tile and there was no obvious change to the map (lack of feedback). Some participants clicked these 2 or 3 times, with the goal of searching for – and then choosing (as the title indicates) – a healthcare provider.</p>
         <p>When that did not work, the participants double-clicked on the map expecting it to zoom in as Google maps works today . This made the content in the dialog difficult, if not impossible, to use.</p>
       </div>

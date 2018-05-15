@@ -10,7 +10,7 @@ export default () => (
                 <h3>Task Completion Rate</h3>
                 <div>
                     <span className="stat">8<span className="sub">%</span></span>
-                    <p>This is the percentage of participants who completeted the task goal. </p>
+                    <p>This is the percentage of participants who completed the task goal. </p>
                 </div>
             </div>
             <h4>Completion Breakdown</h4>
