@@ -4,14 +4,14 @@ import "../styles/styles.scss"
 
 import heroImage from "../assets/people-computer.svg";
 
-const ListLink = props =>
+const ListLink = props => (
   <li className="nav-item">
     <Link to={props.to} activeClassName="active">
       {props.children}
     </Link>
-  </li>;
-console.log(heroImage);
-export default ({ children }) => (
+  </li>
+);
+
     <div>
         <div className="header-wrapper">
           <header className="header">
