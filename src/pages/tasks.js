@@ -6,25 +6,25 @@ export default () => (
     <ul className="page-links">
       <li>
         <Link to="/tasks/hmsa-path-to-app" className="link">
-          <a>HMSA Path To Application</a>
+          <span>HMSA Path To Application</span>
           <p>A user attempts to apply for benefits on hmsa.com</p>
         </Link>
       </li>
       <li>
         <Link to="/tasks/hmsa-path-to-app" className="link">
-          <a>Kaiser Permanente Path To Application</a>
+          <span>Kaiser Permanente Path To Application</span>
           <p>A user attempts to apply for benefits on hmsa.com</p>
         </Link>
       </li>
       <li>
         <Link to="/tasks/hmsa-path-to-app" className="link">
-          <a>HMSA Gym Membership</a>
+          <span>HMSA Gym Membership</span>
           <p>A user attempts to apply for benefits on hmsa.com</p>
         </Link>
       </li>
       <li>
         <Link to="/tasks/hmsa-path-to-app" className="link">
-          <a>HMSA Find A Provider</a>
+          <span>HMSA Find A Provider</span>
           <p>A user attempts to apply for benefits on hmsa.com</p>
         </Link>
       </li>
