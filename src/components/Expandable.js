@@ -2,9 +2,9 @@ import React from "react";
 import PropTypes from 'prop-types';
 
 
-class Expandable extends React.Component{
-    constructor(props) {
-        super(props);
+class Expandable extends React.Component {
+    constructor() {
+        super();
 
         let title = '';
         let content = '';
@@ -49,10 +49,10 @@ class Expandable extends React.Component{
             </div>
         );
     }
-};
+}
 
 Expandable.PropTypes = {
-    number: React.PropTypes.string
+    number: PropTypes.string
 };
 
 export default Expandable;

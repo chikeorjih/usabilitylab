@@ -2,9 +2,9 @@ import React from "react";
 import PropTypes from 'prop-types';
 
 
-class ShowHide extends React.Component{
+class ShowHide extends React.Component {
     constructor(props) {
-        super(props);
+        super();
 
         this.state = {
             text: `${props.children[0].props.children.substring(0, props.config.trim)}...`,
@@ -31,10 +31,10 @@ class ShowHide extends React.Component{
             </span>
         );
     }
-};
+}
 
 ShowHide.PropTypes = {
-    config: React.PropTypes.object
+    config: PropTypes.object
 };
 
 export default ShowHide;

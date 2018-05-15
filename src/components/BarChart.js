@@ -17,11 +17,11 @@ const BarChart = (props) => {
 };
 
 BarChart.PropTypes = {
-    config: React.PropTypes.shape({
-        initial: React.PropTypes.number,
-        color: React.PropTypes.string,
-        score: React.PropTypes.number,
-        total: React.PropTypes.number,
+    config: PropTypes.shape({
+        initial: PropTypes.number,
+        color: PropTypes.string,
+        score: PropTypes.number,
+        total: PropTypes.number,
     })
 };
 

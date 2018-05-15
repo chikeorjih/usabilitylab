@@ -19,7 +19,7 @@ const Participant = (props) => {
 };
 
 Participant.PropTypes = {
-    person: React.PropTypes.object
+    person: PropTypes.object
 };
  
 export default Participant;
