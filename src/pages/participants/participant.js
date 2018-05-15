@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from 'prop-types';
 import ParticipantList from "../../data/participants";
 
 const participant = (props) => {
