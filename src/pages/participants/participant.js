@@ -10,7 +10,7 @@ const participant = (props) => {
         <div className="participant-page">  
             <div className="details">
                 <div className="avatar">
-                    <img src={currentParticipant.img} alt={currentParticipant.name}/>
+                    <img width="80px" height="80px" src={currentParticipant.img} alt={currentParticipant.name}/>
                 </div>
                 <div className="info">
                     <h2>{currentParticipant.name}</h2>
