@@ -1,6 +1,8 @@
 import participant1 from "../assets/participants/participant1.png";
 import participant7 from "../assets/participants/participant7.png";
 
+import video1 from "../assets/video/participant1-1.mp4";
+
 class ParticipantList {
 
     static all = [
@@ -44,7 +46,9 @@ class ParticipantList {
                     confidence: 3
                 },
             ],
-            clips: []
+            clips: [
+                video1
+            ]
         },
         {
             name: 'Dennis L.',

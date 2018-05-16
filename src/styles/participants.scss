@@ -101,10 +101,11 @@
     }
 
     .face {
-        border: 2px solid $brand-primary-color;
-        background: $brand-primary-light;
-        border-radius: 1rem;
-        padding: .2rem;
+        border: 1px solid $color-light-gray;
+        border-radius: 50%;
+        padding: .5rem;
+        box-shadow: 1px 1px 5px $color-gray-medium;
+        margin: .5rem;
 
         img {
             display: inline-block;
@@ -116,6 +117,7 @@
     .label {
         font-size: .8rem;
         display: block;
+        margin: .5rem 0;
     }
 }
 

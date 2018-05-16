@@ -2,6 +2,7 @@ import React from "react";
 import ParticipantList from "../../data/participant-list";
 import BarChart from "../../components/BarChart";
 import ParticipantTask from "../../components/ParticipantTask";
+import Video from "../../components/video";
 
 const participant = (props) => {
     const currentParticipantName = props.location.pathname.split('participants/participant/')[1];
@@ -19,6 +20,10 @@ const participant = (props) => {
 
     const tasks = currentParticipant.tasks.map((task,i) => {
         return <ParticipantTask task={task} key={i}/>;
+    });
+
+    const videos = currentParticipant.clips.map((video,i) => {
+        return <Video src={video} key={i}/>;
     });
 
     return (
@@ -41,6 +46,10 @@ const participant = (props) => {
             <div className="tasks">
                 <h3>Tasks</h3>
                 {tasks}
+            </div>
+            <div className="videos">
+                <h3>Videos</h3>
+                {videos}
             </div>
         </div>
     );
