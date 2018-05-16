@@ -23,7 +23,7 @@ const participant = (props) => {
     });
 
     const videos = currentParticipant.clips.map((video,i) => {
-        return <Video src={video} key={i}/>;
+        return <Video video={video} key={i}/>;
     });
 
     return (

@@ -90,34 +90,47 @@
         flex-wrap: wrap;
     }
 
-    h4 {
-        margin: .5rem 0;
-        width: 100%
+    a {
+        display: block;
+        margin: .5rem 0 1rem;
+        width: 100%;
+        font-weight: bold;
+        color: $text-color-link;
+        text-decoration: underline;
     }
 
     span {
         flex: 1 0 33%;
+        display: flex;
+        flex-direction: column;
         text-align: center;
     }
 
-    .face {
-        border: 1px solid $color-light-gray;
-        border-radius: 50%;
-        padding: .5rem;
-        box-shadow: 1px 1px 5px $color-gray-medium;
-        margin: .5rem;
+    img {
+        display: block;
+        width: 1.5rem;
+        margin: 0 auto;
+    }
 
-        img {
-            display: inline-block;
-            width: 1rem;
-            margin: 0;
-        }
+    .score {
+        display: block;
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin: .5rem 0 0;
     }
 
     .label {
         font-size: .8rem;
         display: block;
-        margin: .5rem 0;
+        margin: 0;
+    }
+
+    .completion {
+        padding-top: 1rem;
+
+        .label {
+            margin: .25rem 0 0;
+        }
     }
 }
 

@@ -47,7 +47,10 @@ class ParticipantList {
                 },
             ],
             clips: [
-                video1
+                {
+                    title: 'What is a network provider?',
+                    src: video1
+                }
             ]
         },
         {
