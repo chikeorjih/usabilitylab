@@ -9,8 +9,10 @@ const ParticipantPreview = (props) => {
                 <img src={props.person.img} alt="participant1"/>
                 <div className="info">
                     <h4>{props.person.name}</h4>
-                    <span><span className="label">Gender:</span><strong>{props.person.gender}</strong></span>
-                    <span><span className="label">Age:</span><strong>{props.person.age}</strong></span>
+                    <div className="row">
+                        <span><span className="label">Gender:</span><strong>{props.person.gender}</strong></span>
+                        <span><span className="label">Age:</span><strong>{props.person.age}</strong></span>
+                    </div>
                     <span><span className="label">Occupation:</span><strong>{props.person.occupation}</strong></span>
                 </div>
             </div>

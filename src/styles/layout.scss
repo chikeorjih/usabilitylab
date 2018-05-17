@@ -243,6 +243,14 @@ section {
     }
 }
 
+.row {
+    display: flex;
+
+    span {
+        flex: 0 1 50%;
+    }
+}
+
 @media (max-width: $screen-phone) {
     .header {
         .hero-image {

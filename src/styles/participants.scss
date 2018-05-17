@@ -6,21 +6,22 @@
         @include card;
 
         display: block;
-        padding: 2rem 1rem;
+        padding: 2rem .5rem;
         margin: 1rem;
         border: 1px solid $brand-primary-light;
-        text-align: center;
-        flex-basis: 25%;
+        width: 12rem;
 
         img {
+            display: block;
             width: 3rem;
             height: 3rem;
             border-radius: 50%;
-            margin: 0;
+            margin: 0 auto;
         }
 
         h4 {
             margin: .5rem 0 1.5rem;
+            text-align: center;
         }
 
         span {
@@ -32,12 +33,13 @@
         }
 
         .label {
-            display: inline;
+            display: block;
             font-size: .9rem;
         }
 
         strong {
-            margin-left: .5rem;
+            display: block;
+            margin-bottom: .5rem;
         }
     }
 }
@@ -147,6 +149,7 @@
             flex: 0 2 auto;
             align-items: center;
             text-align: left;
+            width: auto;
 
             img {
                 width: 2.5rem;
@@ -156,10 +159,12 @@
 
             h4 {
                 margin: .5rem 0;
+                text-align: left;
             }
     
             span {
                 display: flex;
+                margin-right: .5rem;
             }
     
             .info {
@@ -168,12 +173,11 @@
     
             .label {
                 display: flex;
-                flex: 0 1 6rem;
+                flex: 0 1 auto;
                 font-size: .9rem;
             }
     
             strong {
-                margin-left: 1.5rem;
                 flex: 0 1 5rem;
             }
         }
