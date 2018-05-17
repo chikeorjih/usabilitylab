@@ -1,0 +1,39 @@
+.seq-confidence {
+    display: flex;
+
+    h4 {
+        margin: 0 0 1.5rem;
+        
+        span {
+            color: $text-color-gray;
+            font-size: .9rem;
+        }
+    }
+
+    .seq, .confidence {
+        display: block;
+        font-size: 2.5rem;
+        padding: 1rem;
+
+        span {
+            display: inline-block;
+        }
+
+        .adjusted{
+            font-size: 1.5rem;
+            margin-left: .5rem;
+        }
+    }
+}
+
+.first-interaction {
+    display: flex;
+
+    .number-wrapper {
+        margin-right: 2rem;
+    }
+
+    .number {
+        display: block;
+    }
+}
