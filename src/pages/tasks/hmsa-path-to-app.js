@@ -39,5 +39,19 @@ export default () => (
                 </span>
             </div>
         </section>
+        <section>
+            <div className="seq-confidence">
+                <div className="seq">
+                    <h4>Ease(SEQ) Average/<span>Adjusted Average</span></h4>
+                    <span>3.5</span>
+                    <span>1.5</span>
+                </div>
+                <div className="confidence">
+                    <h4>Confidence Average<span>Adjusted Average</span></h4>
+                    <span>3.5</span>
+                    <span>1.5</span>
+                </div>
+            </div>
+        </section>
     </div>
 );
