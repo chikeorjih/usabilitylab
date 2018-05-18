@@ -26,14 +26,51 @@
     }
 }
 
-.first-interaction {
+.interaction, .issue {
     display: flex;
+    margin: 2rem 0 0;
+    align-items: center;
 
-    .number-wrapper {
-        margin-right: 2rem;
+    img {
+        margin: 0;
+        width: 1.5rem;
     }
 
-    .number {
+    .label {
+        font-weight: bold;
         display: block;
+    }
+}
+
+.interaction {
+    .number-wrapper {
+        width: 28%;
+        margin: 0 1rem;
+    }
+
+    .count {
+        display: block;
+    }
+}
+
+.issue {
+    span {
+        flex-basis: 33%
+    }
+
+    .theme {
+        font-weight: bold;
+    }
+
+    .severity-wrapper {
+        text-align: center;
+    }
+
+    .severity {
+        padding: .25rem 1rem;
+        color: $color-white;
+        border-radius: .25rem;
+        margin-bottom: .25rem;
+        display: inline-block;
     }
 }

@@ -16,13 +16,31 @@ class TaskList {
             easeAverage: {score: 3.5, adjusted: 1.5},
             confidenceAverage: {score: 3.5, adjusted: 1.5},
             firstInteraction: {
-                participants: 3,
-                interaction: 'Searched for blah on google.com'
+                participants: ['female','female','female','male','male'],
+                interaction: 'Started by clicking on "Compare Plans" in the Health Plans dropdown'
             },
-            issues: {
-                participants: 3,
-                interaction: 'clicked on stuffs'
-            }
+            issues: [
+                {
+                    participants: ['male','male','male'],
+                    theme: 'Cognitive Overload',
+                    severity: 'High'
+                },
+                {
+                    participants: ['female','female','male','female'],
+                    theme: 'Terminology & Language',
+                    severity: 'Medium'
+                },
+                {
+                    participants: ['female','male'],
+                    theme: 'Readability & Scanabilty',
+                    severity: 'Medium'
+                },
+                {
+                    participants: ['female'],
+                    theme: 'Mismatch with Expectations',
+                    severity: 'Medium'
+                }
+            ]
         },
         {
             name: 'Kaiser Permanente Path to Application',
@@ -39,13 +57,31 @@ class TaskList {
             easeAverage: {score: 3.5, adjusted: 1.5},
             confidenceAverage: {score: 3.5, adjusted: 1.5},
             firstInteraction: {
-                participants: 3,
+                participants: ['male','male','female'],
                 interaction: 'Searched for blah on google.com'
             },
-            issues: {
-                participants: 3,
-                interaction: 'clicked on stuffs'
-            }
+            issues: [
+                {
+                    participants: ['male','male','male'],
+                    theme: 'Cognitive Overload',
+                    severity: 'High'
+                },
+                {
+                    participants: ['female','female','male','female'],
+                    theme: 'Terminology & Language',
+                    severity: 'Medium'
+                },
+                {
+                    participants: ['female','male'],
+                    theme: 'Readability & Scanabilty',
+                    severity: 'Medium'
+                },
+                {
+                    participants: ['female'],
+                    theme: 'Mismatch with Expectations',
+                    severity: 'Medium'
+                }
+            ]
         },
     ];
 

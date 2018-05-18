@@ -2,9 +2,20 @@ import React from "react";
 import BarChart from "../../components/BarChart";
 import TaskList from "../../data/task-list";
 
+import femaleSvg from "../../assets/female.svg";
+import maleSvg from "../../assets/male.svg";
+
 const task = (props) => {
     const currentTaskName = props.location.pathname.split('tasks/task/')[1];
     const currentTask = TaskList.getCurrentTask(currentTaskName);
+    
+    const getParticipants = (participants) => {
+        return (
+            participants.map((participant, i) => {
+                return <img src={participant === 'female'? femaleSvg : maleSvg} key={i}/>;
+            })
+        );
+    };
 
     const completionBreakdown = currentTask.completionBreakdown.map((item,i) => {
         const color = item.label === "Success" ? '#75de8b' : (item.label === "Abandoned" ? '#f76161' : '#ff9108')
@@ -14,6 +25,24 @@ const task = (props) => {
                 <span>{item.label}</span>
                 <span className="chart-wrapper">
                     <BarChart config={{initial: 0, score: item.score, total: 12, color}}/>
+                </span>
+            </div>
+        );
+    });
+
+    const usabilityIssues = currentTask.issues.map((issue,i) => {
+        const color = issue.severity === "Low" ? '#75de8b' : (issue.severity === "High" ? '#f76161' : '#e6b458')
+
+        return (
+            <div className="issue" key={i}>
+                <span className='theme'>{issue.theme}</span>
+                <span className="count-wrapper">
+                    <span className="count">{getParticipants(issue.participants)}</span>
+                    <span className="label">Participants</span>
+                </span>
+                <span className="severity-wrapper">
+                    <span className="severity" style={{background: color}}>{issue.severity}</span>
+                    <span className="label">Severity</span>
                 </span>
             </div>
         );
@@ -50,13 +79,17 @@ const task = (props) => {
             </section>
             <section>
                 <h3>First Interaction</h3>
-                <div className="first-interaction">
+                <div className="interaction">
                     <span className="number-wrapper">
-                        <span className="number">{currentTask.firstInteraction.participants}</span>
-                        <span>Participants</span>
+                        <span className="count">{getParticipants(currentTask.firstInteraction.participants)}</span>
+                        <span className="label">Participants</span>
                     </span>
                     <p>{currentTask.firstInteraction.interaction}</p>
                 </div>
+            </section>
+            <section>
+                <h3>Usability Issues</h3>
+                {usabilityIssues}
             </section>
         </div>
     );
