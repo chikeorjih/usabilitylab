@@ -18,7 +18,7 @@ const ParticipantTask = (props) => {
 
     return (
         <div className="task card" key={props.i}>
-            <Link to={`../../tasks/${props.task.url}`}>{props.task.task}</Link>
+            <Link to={`../../tasks/task/${props.task.url}`}>{props.task.task}</Link>
             <span className="completion">
                 {completed}
                 <span className="label">Task Completed</span>

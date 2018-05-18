@@ -8,7 +8,7 @@ class TaskList {
             url: 'hmsa-path-to-app',
             completionRate: 8,
             completionBreakdown: [
-                {label: 'Sucess', score: 1},
+                {label: 'Success', score: 1},
                 {label: '1 Assist', score: 2},
                 {label: '2 Assists', score: 1},
                 {label: 'Abandoned', score: 8}
@@ -31,7 +31,7 @@ class TaskList {
             url: 'kp-path-to-app',
             completionRate: 8,
             completionBreakdown: [
-                {label: 'Sucess', score: 1},
+                {label: 'Success', score: 1},
                 {label: '1 Assist', score: 2},
                 {label: '2 Assists', score: 1},
                 {label: 'Abandoned', score: 8}
