@@ -1,5 +1,6 @@
 import React from "react";
 import BarChart from "../../components/BarChart";
+import TaskList from "../../data/task-list";
 
 export default () => (
     <div>

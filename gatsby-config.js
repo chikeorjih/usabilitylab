@@ -15,7 +15,12 @@ module.exports = {
     },
     {
       resolve: `gatsby-plugin-create-client-paths`,
-      options: { prefixes: [`/participants/participant/*`] },
+      options: { 
+        prefixes: [
+          `/participants/participant/*`,
+          `/tasks/task/*`
+        ] 
+      },
     },
   ],
 }
