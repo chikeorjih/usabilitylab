@@ -13,8 +13,8 @@ class TaskList {
                 {label: '2 Assists', score: 1},
                 {label: 'Abandoned', score: 8}
             ],
-            easeAverage: {score: 3.5, adjusted: 1.5},
-            confidenceAverage: {score: 3.5, adjusted: 1.5},
+            easeAverage: {score: 2.6, adjusted: 0.6},
+            confidenceAverage: {score: 3, adjusted: 0.6},
             firstInteraction: {
                 participants: ['female','female','female','male','male'],
                 interaction: 'Started by clicking on "Compare Plans" in the Health Plans dropdown'
@@ -22,7 +22,7 @@ class TaskList {
             issues: [
                 {
                     participants: ['male','male','male'],
-                    theme: 'Cognitive Overload',
+                    theme: 'Information Overload',
                     severity: 'High'
                 },
                 {

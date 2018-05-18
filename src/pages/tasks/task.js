@@ -17,6 +17,10 @@ const task = (props) => {
         );
     };
 
+    const getScoreColor = (score) => {
+        return score > 3 ? '#75de8b' : (score < 3 ? '#f76161' : '#ff9108');
+    };
+
     const completionBreakdown = currentTask.completionBreakdown.map((item,i) => {
         const color = item.label === "Success" ? '#75de8b' : (item.label === "Abandoned" ? '#f76161' : '#ff9108')
 
@@ -57,7 +61,7 @@ const task = (props) => {
                     <h3>Task Completion Rate</h3>
                     <div>
                         <span className="stat">{currentTask.completionRate}<span className="sub">%</span></span>
-                        <p>This is the percentage of participants who completed the task goal. </p>
+                        <p>1 out 12 participants successfully completed the task without any training or assisstance.</p>
                     </div>
                 </div>
                 <h4>Completion Breakdown</h4>
@@ -67,13 +71,13 @@ const task = (props) => {
                 <div className="seq-confidence">
                     <div className="seq">
                         <h4>Ease(SEQ) Average<span>/Adjusted Average</span></h4>
-                        <span>{currentTask.easeAverage.score}</span>
-                        <span className="adjusted">/ {currentTask.easeAverage.adjusted}</span>
+                        <span style={{color: getScoreColor(currentTask.easeAverage.score)}}>{currentTask.easeAverage.score}</span>
+                        <span className="adjusted">/{currentTask.easeAverage.adjusted}</span>
                     </div>
                     <div className="confidence">
                         <h4>Confidence Average<span>/Adjusted Average</span></h4>
-                        <span>{currentTask.confidenceAverage.score}</span>
-                        <span className="adjusted">/ {currentTask.confidenceAverage.adjusted}</span>
+                        <span style={{color: getScoreColor(currentTask.confidenceAverage.score)}}>{currentTask.confidenceAverage.score}</span>
+                        <span className="adjusted">/{currentTask.confidenceAverage.adjusted}</span>
                     </div>
                 </div>
             </section>
