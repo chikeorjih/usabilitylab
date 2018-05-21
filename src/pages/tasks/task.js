@@ -55,7 +55,7 @@ const task = (props) => {
     return (
         <div>
             <h1>{currentTask.name}</h1>
-            <p>{currentTask.summary}</p>
+            <p>{currentTask.description}</p>
             <section>
                 <div className="stat-paragraph">
                     <h3>Task Completion Rate</h3>
@@ -89,7 +89,7 @@ const task = (props) => {
                     </div>
                 </div>
             </section>
-            <section className="flex">
+            <section>
                 <h3>First Interaction</h3>
                 <div className="interaction">
                     <span className="number-wrapper">
