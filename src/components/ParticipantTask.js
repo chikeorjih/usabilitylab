@@ -15,22 +15,28 @@ const ParticipantTask = (props) => {
 
     const seqColor = props.task.seq > 3 ? '#3b9c50' : (props.task.seq < 3 ? '#bf3f3f' : '#d07c15');
     const confidenceColor= props.task.confidence > 3 ? '#3b9c50' : (props.task.confidence < 3 ? '#bf3f3f' : '#d07c15');
+    const seqBkg = props.task.seq > 3 ? '#e1f9e6' : (props.task.seq < 3 ? '#ffdada' : '#ffefdd');
+    const confidenceBkg = props.task.confidence > 3 ? '#e1f9e6' : (props.task.confidence < 3 ? '#ffdada' : '#ffefdd');
 
     return (
-        <div className="task card" key={props.i}>
+        <div className="task" key={props.i}>
             <Link to={`../../tasks/task/${props.task.url}`}>{props.task.task}</Link>
             <span className="completion">
                 {completed}
                 <span className="label">Task Completed</span>
             </span>
             <span className="seq">
-                <img src={seqFace}/>
-                <span className="score" style={{color: seqColor}}>{props.task.seq}</span>
+                <span className="score-wrapper" style={{background: seqBkg}}>
+                    <img src={seqFace}/>
+                    <span className="score" style={{color: seqColor}}>{props.task.seq}</span>
+                </span>
                 <span className="label">Ease</span>
             </span>
             <span className="confidence">
-                <img src={confidenceFace}/>
-                <span className="score" style={{color: confidenceColor}}>{props.task.confidence}</span>
+                <span className="score-wrapper" style={{background: confidenceBkg}}>
+                    <img src={confidenceFace}/>
+                    <span className="score" style={{color: confidenceColor}}>{props.task.confidence}</span>
+                </span>
                 <span className="label">Confidence</span>
             </span>
         </div>

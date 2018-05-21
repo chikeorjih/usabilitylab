@@ -67,21 +67,29 @@ const task = (props) => {
                 <h4>Completion Breakdown</h4>
                 {completionBreakdown}
             </section>
-            <section>
+            <section className="flex">
                 <div className="seq-confidence">
                     <div className="seq">
-                        <h4>Ease(SEQ) Average<span>/Adjusted Average</span></h4>
+                        <h4>Ease(SEQ) Average</h4>
                         <span style={{color: getScoreColor(currentTask.easeAverage.score)}}>{currentTask.easeAverage.score}</span>
-                        <span className="adjusted">/{currentTask.easeAverage.adjusted}</span>
+                    </div>
+                    <div className="seq">
+                        <h4>Ease(SEQ) Adjusted Average</h4>
+                        <span style={{color: getScoreColor(currentTask.easeAverage.adjusted)}}>{currentTask.easeAverage.adjusted}</span>
+                    </div>
+                </div>
+                <div className="seq-confidence">
+                <div className="confidence">
+                        <h4>Confidence Average</h4>
+                        <span style={{color: getScoreColor(currentTask.confidenceAverage.score)}}>{currentTask.confidenceAverage.score}</span>
                     </div>
                     <div className="confidence">
-                        <h4>Confidence Average<span>/Adjusted Average</span></h4>
-                        <span style={{color: getScoreColor(currentTask.confidenceAverage.score)}}>{currentTask.confidenceAverage.score}</span>
-                        <span className="adjusted">/{currentTask.confidenceAverage.adjusted}</span>
+                        <h4>Confidence Adjusted Average</h4>
+                        <span style={{color: getScoreColor(currentTask.confidenceAverage.adjusted)}}>{currentTask.confidenceAverage.adjusted}</span>
                     </div>
                 </div>
             </section>
-            <section>
+            <section className="flex">
                 <h3>First Interaction</h3>
                 <div className="interaction">
                     <span className="number-wrapper">

@@ -10,6 +10,16 @@
         margin: 1rem;
         border: 1px solid $brand-primary-light;
         width: 12rem;
+        transition: all 200ms ease-in-out;
+
+        &:hover {
+            background: $color-blue-really-light;
+            border: 1px solid $brand-primary-color;
+
+            h4 {
+                color: $brand-primary-color;
+            }
+        }
 
         img {
             display: block;
@@ -20,8 +30,9 @@
         }
 
         h4 {
-            margin: .5rem 0 1.5rem;
+            margin: .5rem 0 1rem;
             text-align: center;
+            transition: color 200ms ease-in-out;
         }
 
         span {
@@ -30,6 +41,11 @@
 
         .info {
             margin: 0 1rem;
+
+            .row {
+                border-top: 1px solid $color-gray;
+                padding-top: 1rem;
+            }
         }
 
         .label {
@@ -92,6 +108,9 @@
     .task {
         display: flex;
         flex-wrap: wrap;
+        padding: 1rem 0;
+        border-bottom: 1px solid $color-light-gray;
+        margin-bottom: 1rem;
     }
 
     a {
@@ -101,6 +120,7 @@
         font-weight: bold;
         color: $text-color-link;
         text-decoration: underline;
+        padding-left: 8%;
     }
 
     span {
@@ -116,11 +136,20 @@
         margin: 0 auto;
     }
 
+    .score-wrapper {
+        display: block;
+        border-radius: 50%;
+        padding: .5rem;
+        width: 4rem;
+        margin: 0 auto;
+    }
+
     .score {
         display: block;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         font-weight: bold;
         margin: .5rem 0 0;
+        line-height: .8rem;
     }
 
     .label {
@@ -169,6 +198,11 @@
     
             .info {
                 margin: 0 1rem;
+
+                .row {
+                    border:0;
+                    padding-top: 0;
+                }
             }
     
             .label {
@@ -180,6 +214,12 @@
             strong {
                 flex: 0 1 5rem;
             }
+        }
+    }
+
+    .task {
+        a {
+            padding-left: 1rem;
         }
     }
 }
