@@ -6,7 +6,7 @@ import heroImage from "../assets/people-computer.svg";
 
 const ListLink = props => (
   <li className="nav-item">
-    <Link to={props.to} activeClassName="active">
+    <Link to={props.to} activeClassName="active" exact={props.addExact}>
       {props.children}
     </Link>
   </li>
@@ -16,11 +16,11 @@ export default ({ children } = {}) => (
     <div>
         <div className="header-wrapper">
           <header className="header">
-            <Link to="/summary" className="logo">
+            <Link to="/" className="logo">
               <h2>HMSA <span className="sub"> | Usability Lab</span></h2>
             </Link>
             <ul className="nav">
-              <ListLink to="/summary">Summary</ListLink>
+              <ListLink to="/" addExact={true}>Summary</ListLink>
               <ListLink to="/tasks">Tasks</ListLink>
               <ListLink to="/participants">Participants</ListLink>
               <ListLink to="/appendix">Appendix</ListLink>
