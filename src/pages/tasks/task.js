@@ -61,7 +61,7 @@ const task = (props) => {
                     <h3>Task Completion Rate</h3>
                     <div>
                         <span className="stat">{currentTask.completionRate}<span className="sub">%</span></span>
-                        <p>1 out 12 participants successfully completed the task without any training or assisstance.</p>
+                        <p><strong>{currentTask.completionBreakdown[0].score}</strong> out <strong>12</strong> participants successfully completed the task without any training or assisstance.</p>
                     </div>
                 </div>
                 <h4>Completion Breakdown</h4>
