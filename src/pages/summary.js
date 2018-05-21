@@ -2,6 +2,9 @@ import React from "react";
 import ShowHide from "../components/ShowHide";
 import Expandable from "../components/Expandable";
 
+import femaleSvg from "../assets/female.svg";
+import maleSvg from "../assets/male.svg";
+
 export default () => (
   <div>
     <h1>Research Objective</h1>
@@ -26,46 +29,66 @@ export default () => (
             <td>
               Mellennials <span className="subtext">(21-36 years)</span>
             </td>
-            <td>
+            <td className="people">
+              <img src={femaleSvg} alt="male"/>
+              <img src={maleSvg} alt="male"/>
+              <img src={maleSvg} alt="male"/>
             </td>
-            <td>
-            </td>
+            <td className="count">3</td>
           </tr>
           <tr>
             <td>
-              Gen X <span className="subtext">(21-36 years)</span>
+              Gen X <span className="subtext">(37-57 years)</span>
             </td>
-            <td>
+            <td className="people">
+              <img src={femaleSvg} alt="male"/>
+              <img src={femaleSvg} alt="male"/>
             </td>
-            <td>
-            </td>
+            <td className="count">2</td>
           </tr>
           <tr>
             <td>
-              Baby Boomers <span className="subtext">(21-36 years)</span>
+              Baby Boomers <span className="subtext">(65-75 years)</span>
             </td>
-            <td>
+            <td className="people">
+              <img src={femaleSvg} alt="male"/>
+              <img src={femaleSvg} alt="male"/>
+              <img src={femaleSvg} alt="male"/>
+              <img src={maleSvg} alt="male"/>
+              <img src={maleSvg} alt="male"/>
+              <img src={maleSvg} alt="male"/>
             </td>
-            <td>
-            </td>
+            <td className="count">6</td>
           </tr>
           <tr>
             <td>
-              Silent Generation <span className="subtext">(21-36 years)</span>
+              Silent Generation <span className="subtext">(76+ years)</span>
             </td>
-            <td>
+            <td className="people">
+              <img src={femaleSvg} alt="male"/>
             </td>
-            <td>
-            </td>
+            <td className="count">1</td>
           </tr>
           <tr>
             <td>
               Totals  <span className="subtext">(21-36 years)</span>
             </td>
-            <td>
+            <td className="people">
+              <img src={femaleSvg} alt="male"/>
+              <img src={femaleSvg} alt="male"/>
+              <img src={femaleSvg} alt="male"/>
+              <img src={femaleSvg} alt="male"/>
+              <img src={femaleSvg} alt="male"/>
+              <img src={femaleSvg} alt="male"/>
+              <img src={femaleSvg} alt="male"/>
+              <img src={maleSvg} alt="male"/>
+              <img src={maleSvg} alt="male"/>
+              <img src={maleSvg} alt="male"/>
+              <img src={maleSvg} alt="male"/>
+              <img src={maleSvg} alt="male"/>
+              <img src={maleSvg} alt="male"/>
             </td>
-            <td>
-            </td>
+            <td className="count">12</td>
           </tr>
         </tbody>
       </table>
