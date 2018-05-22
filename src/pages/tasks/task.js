@@ -71,21 +71,21 @@ const task = (props) => {
                 <div className="seq-confidence">
                     <div className="seq">
                         <h4>Ease(SEQ) Average</h4>
-                        <span style={{color: getScoreColor(currentTask.easeAverage.score)}}>{currentTask.easeAverage.score}</span>
+                        <span style={{color: getScoreColor(currentTask.easeAverage && currentTask.easeAverage.score)}}>{currentTask.easeAverage && currentTask.easeAverage.score}</span>
                     </div>
                     <div className="seq">
                         <h4>Ease(SEQ) Adjusted Average</h4>
-                        <span style={{color: getScoreColor(currentTask.easeAverage.adjusted)}}>{currentTask.easeAverage.adjusted}</span>
+                        <span style={{color: getScoreColor(currentTask.easeAverage && currentTask.easeAverage.adjusted)}}>{currentTask.easeAverage && currentTask.easeAverage.adjusted}</span>
                     </div>
                 </div>
                 <div className="seq-confidence">
                 <div className="confidence">
                         <h4>Confidence Average</h4>
-                        <span style={{color: getScoreColor(currentTask.confidenceAverage.score)}}>{currentTask.confidenceAverage.score}</span>
+                        <span style={{color: getScoreColor(currentTask.confidenceAverage && currentTask.confidenceAverage.score)}}>{currentTask.confidenceAverage  && currentTask.confidenceAverage.score}</span>
                     </div>
                     <div className="confidence">
                         <h4>Confidence Adjusted Average</h4>
-                        <span style={{color: getScoreColor(currentTask.confidenceAverage.adjusted)}}>{currentTask.confidenceAverage.adjusted}</span>
+                        <span style={{color: getScoreColor(currentTask.firstInteraction && currentTask.firstInteraction.participants)}}>{currentTask.confidenceAverage && currentTask.confidenceAverage.adjusted}</span>
                     </div>
                 </div>
             </section>
