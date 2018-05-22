@@ -55,7 +55,7 @@
 
         strong {
             display: block;
-            margin-bottom: .5rem;
+            margin-bottom: 0.5rem;
         }
     }
 }
@@ -87,6 +87,10 @@
         .label {
             display: inline-block;
         }
+    }
+
+    strong {
+        margin-left: .5rem;
     }
 }
 
@@ -212,7 +216,7 @@
             }
     
             strong {
-                flex: 0 1 5rem;
+                flex: 0 1 8rem;
             }
         }
     }

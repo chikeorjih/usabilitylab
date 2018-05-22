@@ -28,7 +28,7 @@ const task = (props) => {
             <div className="bar-wrapper" key={i}>
                 <span>{item.label}</span>
                 <span className="chart-wrapper">
-                    <BarChart config={{initial: 0, score: item.score, total: 12, color}}/>
+                    <BarChart config={{initial: 0, score: item.score, total: currentTask.completionTotalParticipants, color}}/>
                 </span>
             </div>
         );
@@ -61,7 +61,7 @@ const task = (props) => {
                     <h3>Task Completion Rate</h3>
                     <div>
                         <span className="stat">{currentTask.completionRate}<span className="sub">%</span></span>
-                        <p><strong>{Array.isArray(currentTask.completionBreakdown) && currentTask.completionBreakdown[0].score}</strong> out <strong>12</strong> participants successfully completed the task without any training or assistance.</p>
+                        <p><strong>{Array.isArray(currentTask.completionBreakdown) && currentTask.completionBreakdown[0].score}</strong> out <strong>{currentTask.completionTotalParticipants}</strong> participants successfully completed the task without any training or assistance.</p>
                     </div>
                 </div>
                 <h4>Completion Breakdown</h4>
