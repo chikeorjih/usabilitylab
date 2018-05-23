@@ -11,6 +11,8 @@ import participant10 from "../assets/participants/participant10.png";
 import participant11 from "../assets/participants/participant11.png";
 import participant12 from "../assets/participants/participant12.png";
 
+import flow1_1 from "../assets/flows/participant1-HMSA-path.svg";
+
 import video1 from "../assets/video/participant1-1.mp4";
 
 class ParticipantList {
@@ -62,6 +64,13 @@ class ParticipantList {
                     seq: 5,
                     confidence: 5
                 },
+            ],
+            images: [
+                { 
+                    label: "HMSA Path to Application", 
+                    src: flow1_1,
+                    url: 'hmsa-path-to-app'
+                }
             ],
             clips: [
                 {

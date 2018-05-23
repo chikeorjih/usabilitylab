@@ -3,6 +3,7 @@ import ParticipantList from "../../data/participant-list";
 import BarChart from "../../components/BarChart";
 import ParticipantTask from "../../components/ParticipantTask";
 import Video from "../../components/video";
+import Link from "gatsby-link";
 
 const participant = (props) => {
     const currentParticipantName = props.location.pathname.split('participants/participant/')[1];
@@ -26,6 +27,15 @@ const participant = (props) => {
         return <Video video={video} key={i}/>;
     });
 
+    const flowImages = currentParticipant.images && currentParticipant.images.map((img,i) => {
+        return (
+            <div className="flow-image">
+                 <Link to={`../../tasks/task/${img.url}`}>{img.label}</Link>
+                <img src={img.src} key={i}/>
+            </div>
+        );
+    });
+
     return (
         <div className="participant-page">  
             <div className="details">
@@ -43,14 +53,18 @@ const participant = (props) => {
                 <h3>Provider Affinity</h3>
                 {companyRatings}
             </div>
-            <div className="tasks">
+            <section className="tasks">
                 <h3>Tasks</h3>
                 {tasks}
-            </div>
-            <div className="videos">
+            </section>
+            <section className="flows">
+                <h3>HMSA vs. KP User Flow</h3>
+                {flowImages}
+            </section>
+            <section className="videos">
                 <h3>Videos</h3>
                 {videos}
-            </div>
+            </section>
         </div>
     );
 };

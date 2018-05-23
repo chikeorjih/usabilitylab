@@ -12,12 +12,12 @@
         width: 12rem;
         transition: all 200ms ease-in-out;
 
-        &:hover {
+        &:hover, &:active {
             background: $color-blue-really-light;
             border: 1px solid $brand-primary-color;
 
             h4 {
-                color: $brand-primary-color;
+                color: $color-blue-bright;
             }
         }
 
@@ -43,7 +43,7 @@
             margin: 0 1rem;
 
             .row {
-                border-top: 1px solid $color-gray;
+                border-top: 1px solid $brand-color-yellow;
                 padding-top: 1rem;
             }
         }
@@ -61,6 +61,15 @@
 }
 
 .participant-page {
+    a {
+        display: block;
+        margin: .5rem 0 1rem;
+        width: 100%;
+        font-weight: bold;
+        color: $text-color-link;
+        text-decoration: underline;
+        padding-left: 8%;
+    }
 
     .details {
         display: flex;
@@ -115,16 +124,10 @@
         padding: 1rem 0;
         border-bottom: 1px solid $color-light-gray;
         margin-bottom: 1rem;
-    }
 
-    a {
-        display: block;
-        margin: .5rem 0 1rem;
-        width: 100%;
-        font-weight: bold;
-        color: $text-color-link;
-        text-decoration: underline;
-        padding-left: 8%;
+        &:last-child {
+            border: 0;
+        }
     }
 
     span {
@@ -168,6 +171,13 @@
         .label {
             margin: .25rem 0 0;
         }
+    }
+}
+
+.flow-image {
+    a {
+        padding: 0;
+        margin-top: 2rem;
     }
 }
 
