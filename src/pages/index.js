@@ -71,7 +71,7 @@ export default () => (
         </tr>
         <tr>
           <td>
-            Totals  <span className="subtext">(21-36 years)</span>
+            Totals  <span className="subtext">(24-80 years)</span>
           </td>
           <td className="people">
             <img src={femaleSvg} alt="male"/>
