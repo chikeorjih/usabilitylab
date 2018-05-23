@@ -278,3 +278,24 @@ section {
         }
     }
 }
+
+@media (max-width: $screen-phone-small) and (min-width: 0px) {
+    html {
+        font-size: 14px;
+    }
+
+    .expandable {
+        .number span{
+            width: 1.9rem;
+            height: 1.8rem;
+        }
+    }
+
+    .nav-item a {
+        padding: 0 .6rem .5rem;
+    }
+
+    .participant-page .details img {
+        width: 6rem;
+    }
+}
