@@ -2,7 +2,7 @@ import React from "react";
 import ParticipantList from "../../data/participant-list";
 import BarChart from "../../components/BarChart";
 import ParticipantTask from "../../components/ParticipantTask";
-import Video from "../../components/video";
+import Video from "../../components/Video";
 import Link from "gatsby-link";
 
 const participant = (props) => {
