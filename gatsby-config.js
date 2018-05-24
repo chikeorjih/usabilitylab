@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: `/usability-lab-hmsa`,
+  pathPrefix: '/hmsa',
   siteMetadata: {
     title: 'HMSA Usability Study',
   },

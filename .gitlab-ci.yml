@@ -6,7 +6,7 @@ before_script:
 pages:
   script:
     - npm install
-    - ./node_modules/.bin/gatsby build --prefix-paths
+    - npm run build:production
     - cd public
     - lftp -e "mirror -R ./; bye" -u hmsa,${FTP_PASSWORD} appstore.asynchrony.com
   only:
