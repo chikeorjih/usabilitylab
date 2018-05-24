@@ -1,7 +1,7 @@
-image: node:latest
+image: node:10-alpine
 
 before_script:
-  - apt update && apt install -y lftp
+  - apk add --no-cache lftp
 
 pages:
   script:
