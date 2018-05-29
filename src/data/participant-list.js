@@ -11,7 +11,18 @@ import participant10 from "../assets/participants/participant10.png";
 import participant11 from "../assets/participants/participant11.png";
 import participant12 from "../assets/participants/participant12.png";
 
-import flow1_1 from "../assets/flows/participant1-HMSA-path.svg";
+import flow1_1 from "../assets/flows/participant1-KP-path2app.svg";
+import flow1_2 from "../assets/flows/participant1-organic-HMSA path2app.svg";
+import flow2_1 from "../assets/flows/participant2-KP-path2app.svg";
+import flow3_1 from "../assets/flows/participant3-HMSA-path2app.svg";
+import flow3_2 from "../assets/flows/participant3-KP-path2app.svg";
+import flow3_3 from "../assets/flows/participant3-organic-HMSA path2app.svg";
+import flow4_1 from "../assets/flows/participant4-HMSA-path2app.svg";
+import flow4_2 from "../assets/flows/participant4-KP-path2app.svg";
+import flow4_3 from "../assets/flows/participant4-organic-path2app.svg";
+import flow5_1 from "../assets/flows/participant5-KP-path2app.svg";
+import flow6_1 from "../assets/flows/participant6-KP-path2app.svg";
+import flow6_2 from "../assets/flows/participant6-organic-path2app.svg";
 
 import video1 from "../assets/video/participant1-1.mp4";
 
@@ -67,10 +78,15 @@ class ParticipantList {
             ],
             images: [
                 { 
-                    label: "HMSA Path to Application", 
+                    label: "Kaiser Path to Application", 
                     src: flow1_1,
+                    url: 'kp-path-to-app'
+                },
+                { 
+                    label: "HMSA Path to Application", 
+                    src: flow1_2,
                     url: 'hmsa-path-to-app'
-                }
+                },
             ],
             clips: [
                 {

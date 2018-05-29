@@ -19,7 +19,9 @@ module.exports = {
       options: { 
         prefixes: [
           `/participants/participant/*`,
-          `/tasks/task/*`
+          `/tasks/task/*`,
+          `/hmsa/participants/participant/*`,
+          `/hmsa/tasks/task/*`
         ] 
       },
     },
