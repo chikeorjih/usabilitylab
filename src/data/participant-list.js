@@ -11,18 +11,35 @@ import participant10 from "../assets/participants/participant10.png";
 import participant11 from "../assets/participants/participant11.png";
 import participant12 from "../assets/participants/participant12.png";
 
-import flow1_1 from "../assets/flows/participant1-KP-path2app.svg";
-import flow1_2 from "../assets/flows/participant1-organic-HMSA path2app.svg";
-import flow2_1 from "../assets/flows/participant2-KP-path2app.svg";
-import flow3_1 from "../assets/flows/participant3-HMSA-path2app.svg";
-import flow3_2 from "../assets/flows/participant3-KP-path2app.svg";
-import flow3_3 from "../assets/flows/participant3-organic-HMSA path2app.svg";
-import flow4_1 from "../assets/flows/participant4-HMSA-path2app.svg";
-import flow4_2 from "../assets/flows/participant4-KP-path2app.svg";
-import flow4_3 from "../assets/flows/participant4-organic-path2app.svg";
-import flow5_1 from "../assets/flows/participant5-KP-path2app.svg";
-import flow6_1 from "../assets/flows/participant6-KP-path2app.svg";
-import flow6_2 from "../assets/flows/participant6-organic-path2app.svg";
+import flow1_1 from "../assets/flows/P1-01-organic-HMSA path2app.svg";
+import flow1_2 from "../assets/flows/P1-01-KP-path2app.svg";
+import flow2_1 from "../assets/flows/P1-02-KP-path2app.svg";
+import flow2_2 from "../assets/flows/P1-02-organic-HMSA path2app.svg";
+import flow3_1 from "../assets/flows/P1-03-HMSA path2app.svg";
+import flow3_2 from "../assets/flows/P1-03-KP-path2app.svg";
+import flow3_3 from "../assets/flows/P1-03-organic-HMSA path2app.svg";
+import flow4_1 from "../assets/flows/P1-04-HMSA path2app.svg";
+import flow4_2 from "../assets/flows/P1-04-KP-path2app.svg";
+import flow4_3 from "../assets/flows/P1-04-organic path2app.svg";
+import flow5_1 from "../assets/flows/P1-05-KP-path2app.svg";
+import flow5_2 from "../assets/flows/P1-05-organic path2app.svg";
+import flow6_1 from "../assets/flows/P1-06-KP-path2app.svg";
+import flow6_2 from "../assets/flows/P1-06-organic-HMSA path2app.svg";
+import flow7_1 from "../assets/flows/P2-01-HMSA path2app.svg";
+import flow7_2 from "../assets/flows/P2-01-KP-path2app.svg";
+import flow7_3 from "../assets/flows/P2-01-organic-HMSA path2app.svg";
+import flow8_1 from "../assets/flows/P2-02-HMSA path2app.svg";
+import flow8_2 from "../assets/flows/P2-02-organic-KP path2app.svg";
+import flow9_1 from "../assets/flows/P2-03-KP-path2app.svg";
+import flow9_2 from "../assets/flows/P2-03-organic-HMSA path2app.svg";
+import flow10_1 from "../assets/flows/P2-04-HMSA path2app.svg";
+import flow10_2 from "../assets/flows/P2-04-KP-path2app.svg";
+import flow10_3 from "../assets/flows/P2-04-organic path2app.svg";
+import flow11_1 from "../assets/flows/P2-05-HMSA path2app.svg";
+import flow11_2 from "../assets/flows/P2-05-organic-KP path2app.svg";
+import flow12_1 from "../assets/flows/P2-06-HMSA path2app.svg";
+import flow12_2 from "../assets/flows/P2-06-KP-path2app.svg";
+import flow12_3 from "../assets/flows/P2-06-organic path2app.svg";
 
 import video1 from "../assets/video/participant1-1.mp4";
 
@@ -78,14 +95,16 @@ class ParticipantList {
             ],
             images: [
                 { 
-                    label: "Kaiser Path to Application", 
+                    label: "HMSA Path to Application", 
                     src: flow1_1,
-                    url: 'kp-path-to-app'
+                    url: 'hmsa-path-to-app',
+                    style: 'default'
                 },
                 { 
-                    label: "HMSA Path to Application", 
+                    label: "Kaiser Path to Application", 
                     src: flow1_2,
-                    url: 'hmsa-path-to-app'
+                    url: 'kp-path-to-app',
+                    style: 'large'
                 },
             ],
             clips: [
@@ -135,7 +154,20 @@ class ParticipantList {
                     confidence: 5
                 }
             ],
-            images: [],
+            images: [
+                { 
+                    label: "HMSA Path to Application", 
+                    src: flow2_1,
+                    url: 'hmsa-path-to-app',
+                    style: 'default'
+                },
+                { 
+                    label: "Kaiser Path to Application", 
+                    src: flow2_2,
+                    url: 'kp-path-to-app',
+                    style: 'default'
+                }
+            ],
             clips: [
                 {
                     title: 'What is a network provider?',
@@ -190,7 +222,26 @@ class ParticipantList {
                     confidence: 5
                 }
             ],
-            images: [],
+            images: [
+                { 
+                    label: "HMSA Path to Application", 
+                    src: flow3_1,
+                    url: 'hmsa-path-to-app',
+                    style: 'large'
+                },
+                { 
+                    label: "Kaiser Path to Application", 
+                    src: flow3_2,
+                    url: 'kp-path-to-app',
+                    style: 'default'
+                },
+                { 
+                    label: "Organic", 
+                    src: flow3_3,
+                    url: null,
+                    style: 'default'
+                },
+            ],
             clips: [
                 {
                     title: 'What is a network provider?',
@@ -245,7 +296,26 @@ class ParticipantList {
                     confidence: 5
                 }
             ],
-            images: [],
+            images: [
+                { 
+                    label: "HMSA Path to Application", 
+                    src: flow4_1,
+                    url: 'hmsa-path-to-app',
+                    style: 'large'
+                },
+                { 
+                    label: "Kaiser Path to Application", 
+                    src: flow4_2,
+                    url: 'kp-path-to-app',
+                    style: 'default'
+                },
+                { 
+                    label: "Organic", 
+                    src: flow4_3,
+                    url: null,
+                    style: 'large'
+                },
+            ],
             clips: [
                 {
                     title: 'What is a network provider?',
@@ -293,7 +363,20 @@ class ParticipantList {
                     confidence: 4
                 }
             ],
-            images: [],
+            images: [
+                { 
+                    label: "HMSA Path to Application", 
+                    src: flow5_1,
+                    url: 'hmsa-path-to-app',
+                    style: 'default'
+                },
+                { 
+                    label: "Kaiser Path to Application", 
+                    src: flow5_2,
+                    url: 'kp-path-to-app',
+                    style: 'default'
+                }
+            ],
             clips: [
                 {
                     title: 'What is a network provider?',
@@ -341,7 +424,20 @@ class ParticipantList {
                     confidence: 5
                 }
             ],
-            images: [],
+            images: [
+                { 
+                    label: "HMSA Path to Application", 
+                    src: flow6_1,
+                    url: 'hmsa-path-to-app',
+                    style: 'large'
+                },
+                { 
+                    label: "Kaiser Path to Application", 
+                    src: flow6_2,
+                    url: 'kp-path-to-app',
+                    style: 'default'
+                }
+            ],
             clips: [
                 {
                     title: 'What is a network provider?',
@@ -396,7 +492,26 @@ class ParticipantList {
                     confidence: 3
                 }
             ],
-            images: [],
+            images: [
+                { 
+                    label: "HMSA Path to Application", 
+                    src: flow7_1,
+                    url: 'hmsa-path-to-app',
+                    style: 'large'
+                },
+                { 
+                    label: "Kaiser Path to Application", 
+                    src: flow7_2,
+                    url: 'kp-path-to-app',
+                    style: 'default'
+                },
+                { 
+                    label: "Organic", 
+                    src: flow7_3,
+                    url: null,
+                    style: 'default'
+                },
+            ],
             clips: []
         },
         {
@@ -439,7 +554,20 @@ class ParticipantList {
                     confidence: 3
                 }
             ],
-            images: [],
+            images: [
+                { 
+                    label: "HMSA Path to Application", 
+                    src: flow8_1,
+                    url: 'hmsa-path-to-app',
+                    style: 'default'
+                },
+                { 
+                    label: "Kaiser Path to Application", 
+                    src: flow8_2,
+                    url: 'kp-path-to-app',
+                    style: 'large'
+                }
+            ],
             clips: []
         },
         {
@@ -482,7 +610,20 @@ class ParticipantList {
                     confidence: 5
                 }
             ],
-            images: [],
+            images: [
+                { 
+                    label: "HMSA Path to Application", 
+                    src: flow9_1,
+                    url: 'hmsa-path-to-app',
+                    style: 'default'
+                },
+                { 
+                    label: "Kaiser Path to Application", 
+                    src: flow9_2,
+                    url: 'kp-path-to-app',
+                    style: 'default'
+                }
+            ],
             clips: []
         },
         {
@@ -539,7 +680,26 @@ class ParticipantList {
                     confidence: 4
                 }
             ],
-            images: [],
+            images: [
+                { 
+                    label: "HMSA Path to Application", 
+                    src: flow10_1,
+                    url: 'hmsa-path-to-app',
+                    style: 'default'
+                },
+                { 
+                    label: "Kaiser Path to Application", 
+                    src: flow10_2,
+                    url: 'kp-path-to-app',
+                    style: 'large'
+                },
+                { 
+                    label: "Organic", 
+                    src: flow10_3,
+                    url: null,
+                    style: 'default'
+                },
+            ],
             clips: []
         },
         {
@@ -582,7 +742,20 @@ class ParticipantList {
                     confidence: 5
                 }
             ],
-            images: [],
+            images: [
+                { 
+                    label: "HMSA Path to Application", 
+                    src: flow11_1,
+                    url: 'hmsa-path-to-app',
+                    style: 'large'
+                },
+                { 
+                    label: "Kaiser Path to Application", 
+                    src: flow11_2,
+                    url: 'kp-path-to-app',
+                    style: 'default'
+                }
+            ],
             clips: []
         },
         {
@@ -625,7 +798,26 @@ class ParticipantList {
                     confidence: 4
                 }
             ],
-            images: [],
+            images: [
+                { 
+                    label: "HMSA Path to Application", 
+                    src: flow12_1,
+                    url: 'hmsa-path-to-app',
+                    style: 'large'
+                },
+                { 
+                    label: "Kaiser Path to Application", 
+                    src: flow12_2,
+                    url: 'kp-path-to-app',
+                    style: 'default'
+                },
+                { 
+                    label: "Organic", 
+                    src: flow12_3,
+                    url: null,
+                    style: 'large'
+                },
+            ],
             clips: []
         }
     ];

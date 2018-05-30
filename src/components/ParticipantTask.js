@@ -18,9 +18,11 @@ const ParticipantTask = (props) => {
     const seqBkg = props.task.seq > 3 ? '#e1f9e6' : (props.task.seq < 3 ? '#ffdada' : '#ffefdd');
     const confidenceBkg = props.task.confidence > 3 ? '#e1f9e6' : (props.task.confidence < 3 ? '#ffdada' : '#ffefdd');
 
+    const link = props.task.url !== 'organic' ? <Link to={`../../tasks/${props.task.url}`}>{props.task.task}</Link> : <h5 className="task-title ">{props.task.task}</h5>
+
     return (
         <div className="task" key={props.i}>
-            <Link to={`../../tasks/task/${props.task.url}`}>{props.task.task}</Link>
+            {link}
             <span className="completion">
                 {completed}
                 <span className="label">Task Completed</span>

@@ -71,6 +71,14 @@
         padding-left: 8%;
     }
 
+    .task-title {
+        display: block;
+        margin: .5rem 0 1rem;
+        width: 100%;
+        padding-left: 8%;
+        font-size: 1rem;
+    }
+
     .details {
         display: flex;
         align-items: center;
@@ -179,6 +187,10 @@
         padding: 0;
         margin-top: 2rem;
     }
+
+    .large {
+        max-width: 16rem;;
+    }
 }
 
 @media (max-width: $screen-phone) {
@@ -234,6 +246,12 @@
     .task {
         a {
             padding-left: 1rem;
+        }
+    }
+
+    .flow-image {
+        .large {
+            max-width: 10rem;;
         }
     }
 }
