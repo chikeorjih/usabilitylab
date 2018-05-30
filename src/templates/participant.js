@@ -27,7 +27,7 @@ const participant = (props) => {
     });
 
     const flowImages = currentParticipant.images.map((img,i) => {
-        const link = img.url !== null ? <Link to={{ pathname: `tasks/${img.url}`}}>{img.label}</Link> : <h4>{img.label}</h4>
+        const link = img.url !== null ? <Link to={{ pathname: `../../tasks/${img.url}`}}>{img.label}</Link> : <h4>{img.label}</h4>
 
         return (
             <div className="flow-image" key={i}>
