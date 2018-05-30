@@ -224,6 +224,22 @@ class TaskList {
     static getCurrentTask(id) {
         return this.tasks.find(task => task.url === id);
     };
+
+    static getShape() {
+        return {
+            name: null,
+            summary: null,
+            description: null,
+            url: null,
+            completionRate: null,
+            completionBreakdown: [{label: null, score: null}],
+            completionTotalParticipants: null,
+            easeAverage: null,
+            confidenceAverage: null,
+            firstInteraction: {participants: [], interaction: null},
+            issues: []
+        };
+    }
     
 } 
 

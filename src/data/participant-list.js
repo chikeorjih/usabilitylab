@@ -135,6 +135,7 @@ class ParticipantList {
                     confidence: 5
                 }
             ],
+            images: [],
             clips: [
                 {
                     title: 'What is a network provider?',
@@ -189,6 +190,7 @@ class ParticipantList {
                     confidence: 5
                 }
             ],
+            images: [],
             clips: [
                 {
                     title: 'What is a network provider?',
@@ -243,6 +245,7 @@ class ParticipantList {
                     confidence: 5
                 }
             ],
+            images: [],
             clips: [
                 {
                     title: 'What is a network provider?',
@@ -290,6 +293,7 @@ class ParticipantList {
                     confidence: 4
                 }
             ],
+            images: [],
             clips: [
                 {
                     title: 'What is a network provider?',
@@ -337,6 +341,7 @@ class ParticipantList {
                     confidence: 5
                 }
             ],
+            images: [],
             clips: [
                 {
                     title: 'What is a network provider?',
@@ -391,6 +396,7 @@ class ParticipantList {
                     confidence: 3
                 }
             ],
+            images: [],
             clips: []
         },
         {
@@ -433,6 +439,7 @@ class ParticipantList {
                     confidence: 3
                 }
             ],
+            images: [],
             clips: []
         },
         {
@@ -475,6 +482,7 @@ class ParticipantList {
                     confidence: 5
                 }
             ],
+            images: [],
             clips: []
         },
         {
@@ -531,6 +539,7 @@ class ParticipantList {
                     confidence: 4
                 }
             ],
+            images: [],
             clips: []
         },
         {
@@ -573,6 +582,7 @@ class ParticipantList {
                     confidence: 5
                 }
             ],
+            images: [],
             clips: []
         },
         {
@@ -615,6 +625,7 @@ class ParticipantList {
                     confidence: 4
                 }
             ],
+            images: [],
             clips: []
         }
     ];

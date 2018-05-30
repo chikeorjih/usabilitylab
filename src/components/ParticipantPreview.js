@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 const ParticipantPreview = (props) => {
     return (
-        <Link to={{ pathname: `participants/participant/${props.person.url}`, person: props.person}} className="profile-link">
+        <Link to={{ pathname: `participants/${props.person.url}`, person: props.person}} className="profile-link">
             <div className="participant">
                 <img src={props.person.img} alt="participant1"/>
                 <div className="info">
