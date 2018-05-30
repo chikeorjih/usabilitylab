@@ -5,7 +5,7 @@ import TaskList from "../data/task-list";
 const taskList = TaskList.list.map((task, i) => {
   return (
     <li key={i}>
-      <Link to={{ pathname: `tasks/task/${task.url}`, task: task}} className="link">
+      <Link to={{ pathname: `tasks/${task.url}`}} className="link">
         <span>{task.name}</span>
         <p>{task.summary}</p>
       </Link>

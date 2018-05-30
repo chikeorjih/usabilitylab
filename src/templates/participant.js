@@ -1,15 +1,14 @@
 import React from "react";
-import ParticipantList from "../../data/participant-list";
-import BarChart from "../../components/BarChart";
-import ParticipantTask from "../../components/ParticipantTask";
-import Video from "../../components/Video";
+import ParticipantList from "../data/participant-list";
+import BarChart from "../components/BarChart";
+import ParticipantTask from "../components/ParticipantTask";
+import Video from "../components/Video";
 import Link from "gatsby-link";
 
 const participant = (props) => {
-    const currentParticipantName = props.location.pathname.split('participants/participant/')[1];
-    const currentParticipant = ParticipantList.getCurrentParticipant(currentParticipantName) || {};
+    const currentParticipant = ParticipantList.getCurrentParticipant(props.pathContext.url);
 
-    const companyRatings = currentParticipant.providers && currentParticipant.providers.map((x,i) => {
+    const companyRatings = currentParticipant.providers.map((x,i) => {
         const color = x.score > 3 ? '#75de8b' : (x.score < 3 ? '#f76161' : '#ff9108');
         return (
             <div className="bar-wrapper" key={i}>
@@ -19,18 +18,18 @@ const participant = (props) => {
         );
     });
 
-    const tasks = currentParticipant.tasks && currentParticipant.tasks.map((task,i) => {
+    const tasks = currentParticipant.tasks.map((task,i) => {
         return <ParticipantTask task={task} key={i}/>;
     });
 
-    const videos = currentParticipant.clips && currentParticipant.clips.map((video,i) => {
+    const videos = currentParticipant.clips.map((video,i) => {
         return <Video video={video} key={i}/>;
     });
 
-    const flowImages = currentParticipant.images && currentParticipant.images.map((img,i) => {
+    const flowImages = currentParticipant.images.map((img,i) => {
         return (
             <div className="flow-image">
-                 <Link to={`../../tasks/task/${img.url}`}>{img.label}</Link>
+                 <Link to={{ pathname: `tasks/${img.url}`}}>{img.label}</Link>
                 <img src={img.src} key={i}/>
             </div>
         );

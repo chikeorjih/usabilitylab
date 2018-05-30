@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "crypto": "^1.0.1",
     "fs-extra": "^6.0.1",
     "gatsby": "^1.9.247",
     "gatsby-link": "^1.6.40",

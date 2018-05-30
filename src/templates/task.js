@@ -1,18 +1,17 @@
 import React from "react";
-import BarChart from "../../components/BarChart";
-import TaskList from "../../data/task-list";
-import ShowHide from "../../components/ShowHide";
+import BarChart from "../components/BarChart";
+import TaskList from "../data/task-list";
+import ShowHide from "../components/ShowHide";
 
-import femaleSvg from "../../assets/female.svg";
-import maleSvg from "../../assets/male.svg";
+import femaleSvg from "../assets/female.svg";
+import maleSvg from "../assets/male.svg";
 
 const task = (props) => {
-    const currentTaskName = props.location.pathname.split('tasks/task/')[1];
-    const currentTask = TaskList.getCurrentTask(currentTaskName) || {};
+    const currentTask = TaskList.getCurrentTask(props.pathContext.url);
     
     const getParticipants = (participants) => {
         return (
-            participants && participants.map((participant, i) => {
+            participants.map((participant, i) => {
                 return <img src={participant === 'female'? femaleSvg : maleSvg} key={i}/>;
             })
         );
@@ -22,7 +21,7 @@ const task = (props) => {
         return score > 3 ? '#75de8b' : (score < 3 ? '#f76161' : '#ff9108');
     };
 
-    const completionBreakdown = currentTask.completionBreakdown && currentTask.completionBreakdown.map((item,i) => {
+    const completionBreakdown = currentTask.completionBreakdown.map((item,i) => {
         const color = item.label === "Success" ? '#75de8b' : (item.label === "Abandoned" ? '#f76161' : '#ff9108')
 
         return (
@@ -35,7 +34,7 @@ const task = (props) => {
         );
     });
 
-    const usabilityIssues = currentTask.issues && currentTask.issues.map((issue,i) => {
+    const usabilityIssues = currentTask.issues.map((issue,i) => {
         const color = issue.severity === "Low" ? '#75de8b' : (issue.severity === "High" ? '#f76161' : '#e6b458')
 
         return (
@@ -62,7 +61,7 @@ const task = (props) => {
                     <h3>Task Completion Rate</h3>
                     <div>
                         <span className="stat">{currentTask.completionRate}<span className="sub">%</span></span>
-                        <p><strong>{Array.isArray(currentTask.completionBreakdown) && currentTask.completionBreakdown[0].score}</strong> out <strong>{currentTask.completionTotalParticipants}</strong> participants successfully completed the task without any training or assistance.</p>
+                        <p><strong>{currentTask.completionBreakdown[0].score}</strong> out <strong>{currentTask.completionTotalParticipants}</strong> participants successfully completed the task without any training or assistance.</p>
                     </div>
                 </div>
                 <h4>Completion Breakdown</h4>
@@ -100,10 +99,10 @@ const task = (props) => {
                 <h3>First Interaction</h3>
                 <div className="interaction">
                     <span className="number-wrapper">
-                        <span className="count">{getParticipants(currentTask.firstInteraction && currentTask.firstInteraction.participants)}</span>
+                        <span className="count">{getParticipants(currentTask.firstInteraction.participants)}</span>
                         <span className="label">Participants</span>
                     </span>
-                    <p>{currentTask.firstInteraction && currentTask.firstInteraction.interaction}</p>
+                    <p>{currentTask.firstInteraction.interaction}</p>
                 </div>
             </section>
             <section>
