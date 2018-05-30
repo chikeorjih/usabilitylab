@@ -191,6 +191,11 @@
     .large {
         max-width: 16rem;;
     }
+
+    img {
+        @include card;
+        padding: 2rem;
+    }
 }
 
 @media (max-width: $screen-phone) {
