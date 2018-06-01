@@ -16,6 +16,12 @@ const taskList = TaskList.list.map((task, i) => {
 export default () => (
   <div>
     <ul className="page-links">
+      <li>
+        <Link to={{ pathname: '/tasks/organic' }} className="link">
+          <span>Organic Task</span>
+          <p>We gave all participants a task to observe how they will use the Internet to find and evaluate health insurance plans</p>
+        </Link>
+      </li>
       {taskList}
     </ul>
   </div>
