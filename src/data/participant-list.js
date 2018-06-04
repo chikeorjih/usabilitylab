@@ -156,15 +156,15 @@ class ParticipantList {
             ],
             images: [
                 { 
-                    label: "HMSA Path to Application", 
+                    label: "Kaiser Path to Application", 
                     src: flow2_1,
-                    url: 'hmsa-path-to-app',
+                    url: 'kp-path-to-app',
                     style: 'default'
                 },
                 { 
-                    label: "Kaiser Path to Application", 
+                    label: "Organic", 
                     src: flow2_2,
-                    url: 'kp-path-to-app',
+                    url: null,
                     style: 'default'
                 }
             ],
