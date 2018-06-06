@@ -41,7 +41,37 @@ import flow12_1 from "../assets/flows/P2-06-HMSA path2app.svg";
 import flow12_2 from "../assets/flows/P2-06-KP-path2app.svg";
 import flow12_3 from "../assets/flows/P2-06-organic path2app.svg";
 
-import video1 from "../assets/video/participant1-1.mp4";
+import video1_1 from "../assets/video/1_01_hmsa_path2app.mp4";
+import video3_1 from "../assets/video/1_03_hmsa_gym_benefit.mp4";
+import video3_2 from "../assets/video/1_03_kp_path2app.mp4";
+import video4_1 from "../assets/video/1_04_hmsa_path_2_app.mp4";
+import video5_1 from "../assets/video/1_05_organic_path2app.mp4";
+import video6_1 from "../assets/video/1_06_kp_path2app.mp4";
+import video6_2 from "../assets/video/1_06_kp_path2app2.mp4";
+import video6_3 from "../assets/video/1_06_organic_hmsa_path2app.mp4";
+import video7_1 from "../assets/video/2_01_hmsa_path2app.mp4";
+import video7_2 from "../assets/video/2_01_hmsa_path2app2.mp4";
+import video7_3 from "../assets/video/2_01_hmsa_path2app3.mp4";
+import video7_4 from "../assets/video/2_01_hmsa_path2app4.mp4";
+import video7_5 from "../assets/video/2_01_kp_path2app.mp4";
+import video7_6 from "../assets/video/2_01_kp_path2app2.mp4";
+import video7_7 from "../assets/video/2_01_kp_path2app3.mp4";
+import video7_8 from "../assets/video/2_01_organic_hmsa_path2app.mp4";
+import video7_9 from "../assets/video/2_01_organic_hmsa_path2app2.mp4";
+import video7_10 from "../assets/video/2_01_organic_path2app.mp4";
+import video8_1 from "../assets/video/2_02_hmsa_path2app.mp4";
+import video8_2 from "../assets/video/2_02_organic_kp_path2app.mp4";
+import video8_3 from "../assets/video/2_02_organic_kp_path2app2.mp4";
+import video9_1 from "../assets/video/2_03_hmsa_find_a_doctor.mp4";
+import video9_2 from "../assets/video/2_03_hmsa_path2app.mp4";
+import video9_3 from "../assets/video/2_03_organic_hmsa_path2app.mp4";
+import video9_4 from "../assets/video/2_03_organic.mp4";
+import video10_1 from "../assets/video/2_04_hmsa_find_a_doctor.mp4";
+import video10_2 from "../assets/video/2_04_hmsa_path2app.mp4";
+import video10_3 from "../assets/video/2_04_kp_path2app.mp4";
+import video10_4 from "../assets/video/2_04_organic_path2app.mp4";
+import video11_1 from "../assets/video/2_05_hmsa_path2app.mp4";
+import video12_1 from "../assets/video/2_06_hmsa_path2app.mp4";
 
 class ParticipantList {
 
@@ -109,8 +139,8 @@ class ParticipantList {
             ],
             clips: [
                 {
-                    title: 'What is a network provider?',
-                    src: video1
+                    title: 'HMSA Path to Application - "Make it Better"',
+                    src: video1_1
                 }
             ]
         },
@@ -168,12 +198,7 @@ class ParticipantList {
                     style: 'default'
                 }
             ],
-            clips: [
-                {
-                    title: 'What is a network provider?',
-                    src: video1
-                }
-            ]
+            clips: []
         },
         {
             name: 'Claire C.',
@@ -244,8 +269,12 @@ class ParticipantList {
             ],
             clips: [
                 {
-                    title: 'What is a network provider?',
-                    src: video1
+                    title: 'HMSA Gym Benefits - "Make it easer to find"',
+                    src: video3_1
+                },
+                {
+                    title: 'Kaiser Permanente Path to Application - View our plans',
+                    src: video3_2
                 }
             ]
         },
@@ -318,8 +347,8 @@ class ParticipantList {
             ],
             clips: [
                 {
-                    title: 'What is a network provider?',
-                    src: video1
+                    title: 'HMSA Path to Application - Plan Details - Make it better',
+                    src: video4_1
                 }
             ]
         },
@@ -379,8 +408,8 @@ class ParticipantList {
             ],
             clips: [
                 {
-                    title: 'What is a network provider?',
-                    src: video1
+                    title: 'Organic Path to Application - See Plans',
+                    src: video5_1
                 }
             ]
         },
@@ -440,8 +469,16 @@ class ParticipantList {
             ],
             clips: [
                 {
-                    title: 'What is a network provider?',
-                    src: video1
+                    title: 'Kaiser Path to Application - "This will take another 10 minutes..."',
+                    src: video6_1
+                },
+                {
+                    title: 'Kaiser Path to Application - See Plans',
+                    src: video6_2
+                },
+                {
+                    title: 'Organic Path to Application - Not easy',
+                    src: video6_3
                 }
             ]
         },
@@ -512,7 +549,48 @@ class ParticipantList {
                     style: 'default'
                 },
             ],
-            clips: []
+            clips: [
+                {
+                    title: 'HMSA Path to Application - "I will ask friends"',
+                    src: video7_1
+                },
+                {
+                    title: 'HMSA Path to Application - Freedom to choose',
+                    src: video7_2
+                },
+                {
+                    title: 'HMSA Path to Application - Call customer service',
+                    src: video7_3
+                },
+                {
+                    title: 'HMSA Path to Application - Deductible',
+                    src: video7_4
+                },
+                {
+                    title: 'Kaiser Path to Application - Akamai Advantage',
+                    src: video7_5
+                },
+                {
+                    title: 'Kaiser Path to Application - Taking new patients?',
+                    src: video7_6
+                },
+                {
+                    title: 'Kaiser Path to Application - "I am overwhelmed and confused"',
+                    src: video7_7
+                },
+                {
+                    title: 'Organic Path to Application - Individuals and families',
+                    src: video7_8
+                },
+                {
+                    title: 'Organic Path to Application - "Confusing"',
+                    src: video7_9
+                },
+                {
+                    title: 'Organic Path to Application - Too many plans',
+                    src: video7_10
+                }
+            ]
         },
         {
             name: 'Joyce L.',
@@ -568,7 +646,20 @@ class ParticipantList {
                     style: 'large'
                 }
             ],
-            clips: []
+            clips: [
+                {
+                    title: 'HMSA Path to Application - Find your doctor',
+                    src: video8_1
+                },
+                {
+                    title: 'Organic Path to Application  -  22 Plans',
+                    src: video8_2
+                },
+                {
+                    title: 'Organic Path to Application  - Monthly premium costs',
+                    src: video8_3
+                }
+            ]
         },
         {
             name: 'Clifford L.',
@@ -624,7 +715,24 @@ class ParticipantList {
                     style: 'default'
                 }
             ],
-            clips: []
+            clips: [
+                {
+                    title: 'HMSA Path to Application - "I\'d Rather go to a workshop"',
+                    src: video9_1
+                },
+                {
+                    title: 'HMSA Path to Application - Talk to a real person',
+                    src: video9_2
+                },
+                {
+                    title: 'HMSA Path to Application - Make it better with comparisons',
+                    src: video9_3
+                },
+                {
+                    title: 'Organic Path to Application - "Why are there two entries"',
+                    src: video9_4
+                }
+            ]
         },
         {
             name: 'Jane B.',
@@ -700,7 +808,24 @@ class ParticipantList {
                     style: 'default'
                 },
             ],
-            clips: []
+            clips: [
+                {
+                    title: 'HMSA Find a doctor - "God, this is small"',
+                    src: video10_1
+                },
+                {
+                    title: 'HMSA Path to Application - Make it better',
+                    src: video10_2
+                },
+                {
+                    title: 'Kaiser Path to Application - Non links that look link links',
+                    src: video10_3
+                },
+                {
+                    title: 'Organic Path to Application - "Just give me a link to all available carriers"',
+                    src: video10_4
+                }
+            ]
         },
         {
             name: 'Rolf N.',
@@ -756,7 +881,12 @@ class ParticipantList {
                     style: 'default'
                 }
             ],
-            clips: []
+            clips: [
+                {
+                    title: 'HMSA Path to Application - Talk to real people',
+                    src: video11_1
+                }
+            ]
         },
         {
             name: 'Adeline S.',
@@ -818,7 +948,12 @@ class ParticipantList {
                     style: 'large'
                 },
             ],
-            clips: []
+            clips: [
+                {
+                    title: 'HMSA Path to Application - "I\'m lazy..."',
+                    src: video12_1
+                }
+            ]
         }
     ];
 

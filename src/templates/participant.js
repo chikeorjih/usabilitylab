@@ -37,6 +37,13 @@ const participant = (props) => {
         );
     });
 
+    const videoSection =  currentParticipant.clips.length > 0 ? 
+        <section className="videos">
+            <h3>Videos</h3>
+            {videos}
+        </section>
+        : null;
+
     return (
         <div className="participant-page">  
             <div className="details">
@@ -62,10 +69,7 @@ const participant = (props) => {
                 <h3>HMSA vs. KP User Flow</h3>
                 {flowImages}
             </section>
-            <section className="videos">
-                <h3>Videos</h3>
-                {videos}
-            </section>
+            {videoSection}
         </div>
     );
 };
