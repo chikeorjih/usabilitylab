@@ -275,6 +275,23 @@ section {
     }
 }
 
+.appendix {
+    ul {
+        list-style: none;
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+    }
+
+    img {
+        display: inline-block;
+        width: 1.2rem;
+        margin: 0 .5rem 0 0;
+    }
+}
+
 @media (max-width: $screen-phone) {
     .header {
         .hero-image {
