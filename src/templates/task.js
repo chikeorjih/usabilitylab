@@ -52,6 +52,21 @@ const task = (props) => {
         );
     });
 
+    const recommendations = currentTask.recommendations.map((rec, i) => {
+        return (
+            <div className="recommendations" key={i}>
+                {rec.description !== null ? <p>{rec.description}</p> : null}
+                {rec.file !== null ? <a href={rec.file}>{rec.fileName}</a> : null}
+            </div>
+        );
+    });
+
+    const recommendationSection = currentTask.recommendations.length > 0 ? 
+    <section>
+        <h3>Recommendations</h3>
+        {recommendations}
+    </section> : null;
+
     return (
         <div>
             <h1>{currentTask.name}</h1>
@@ -115,6 +130,7 @@ const task = (props) => {
                 </ShowHide>
                 {usabilityIssues}
             </section>
+            {recommendationSection}
         </div>
     );
 };

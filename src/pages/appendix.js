@@ -13,12 +13,14 @@ import Observer1 from "../assets/docs/Observer_materials.pdf";
 import Persona1 from "../assets/docs/HMSA_personas_Lani.pdf";
 import Persona2 from "../assets/docs/HMSA_personas_Trey R2.pdf";
 import Persona3 from "../assets/docs/HMSA_personas_Dan.pdf";
+import wires1 from "../assets/pdfs/HMSA_path_to_application.pdf";
+import wires2 from "../assets/pdfs/HMSA_provider_search.pdf";
 
 
 export default () => (
   <div className="appendix">
     <h1>Appendix</h1>
-    <p>WWTAL assisted the HMSA.com team in assessing the user experience of HMSA.com as well as one of its primary competitor, Kaiser Permanete(kpinhawaii.com). WWTAL conducted a workshop with partner Fieldwork Network, gathered all the results and has provided on this site, the baseline usability research on HMSA.com and kpinhawaii.com.</p>
+    <p>WWTAL assisted the HMSA.com team in assessing the user experience of HMSA.com as well as one of its primary competitor, Kaiser Permanete(kpinhawaii.com). WWTAL conducted a usability workshop with HMSA, gathered all the results and has provided on this site, the baseline usability research on HMSA.com and kpinhawaii.com.</p>
     <p>
       Below are the various artifacts and documents used in this study. Included are the kickoff materials, recruiting and moderator guides used in the labs and the final data gathered from the lab.
     </p>
@@ -49,6 +51,11 @@ export default () => (
       <li><img src={pdf}/><a href={Persona2}>Trey</a></li>
       <li><img src={pdf}/><a href={Persona3}>Dan</a></li>
       <li><img src={sketch}/><a href={withPrefix('/HMSA_personas.sketch')}>All Personas</a></li>
+    </ul>
+    <h3>Recommendations</h3>
+    <ul>
+      <li><img src={pdf}/><a href={wires1}>HMSA path to application wireframes</a></li>
+      <li><img src={pdf}/><a href={wires2}>HMSA find a doctor wireframes</a></li>
     </ul>
   </div>
 );

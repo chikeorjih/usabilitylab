@@ -1,3 +1,6 @@
+import wires1 from "../assets/pdfs/HMSA_path_to_application.pdf";
+import wires2 from "../assets/pdfs/HMSA_provider_search.pdf";
+
 class TaskList {
 
     static tasks = [
@@ -40,6 +43,13 @@ class TaskList {
                     theme: 'Mismatch with expectations',
                     severity: 'Medium'
                 }
+            ],
+            recommendations: [
+                {
+                    description: 'We noticed some trends and pain points after analying how users performed on this task. We have some recommendations in the form of rough wireframed that might help start the discussion on how to better help the customer sucessfully achieve the task',
+                    file: wires1,
+                    fileName: 'Path to application recommendations (wireframes)'
+                }
             ]
         },
         {
@@ -76,7 +86,8 @@ class TaskList {
                     theme: 'Location & navigation',
                     severity: 'High'
                 }
-            ]
+            ],
+            recommendations: []
         },
         {
             name: 'Find a Doctor on hmsa.com',
@@ -105,6 +116,13 @@ class TaskList {
                     participants: ['female'],
                     theme: 'Information overload',
                     severity: 'Medium-low'
+                }
+            ],
+            recommendations: [
+                {
+                    description: 'We noticed some trends and pain points after analying how users performed on this task. We have some recommendations in the form of rough wireframed that might help start the discussion on how to better help the customer sucessfully achieve the task',
+                    file: wires2,
+                    fileName: 'Find a provider recommendations (wireframes)'
                 }
             ]
         },
@@ -147,7 +165,8 @@ class TaskList {
                     theme: 'Mismatch with expectations',
                     severity: 'Medium-low'
                 }
-            ]
+            ],
+            recommendations: []
         },
         {
             name: 'Find Kaiser Permanente Gym Benefits',
@@ -182,7 +201,8 @@ class TaskList {
                     theme: 'Page or content layout',
                     severity: 'Medium'
                 }
-            ]
+            ],
+            recommendations: []
         },
         {
             name: 'Find a Doctor on kpinhawaii.com',
@@ -212,7 +232,8 @@ class TaskList {
                     theme: 'Location & navigatino',
                     severity: 'High'
                 }
-            ]
+            ],
+            recommendations: []
         }
         
     ];
