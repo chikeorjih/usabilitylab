@@ -52,6 +52,12 @@ const task = (props) => {
         );
     });
 
+    const analysis = currentTask.analysis.map((paragraph,i) => {
+        return (
+            <p key={i}>{paragraph}</p>
+        );
+    });
+
     const recommendations = currentTask.recommendations.map((rec, i) => {
         return (
             <div className="recommendations" key={i}>
@@ -129,6 +135,12 @@ const task = (props) => {
                     <p> A <strong>Low</strong> rating indicates the participant may have not noticed the issue but the team facilitating the lab noticed an issue</p>
                 </ShowHide>
                 {usabilityIssues}
+            </section>
+            <section>
+                <h3>Analysis</h3>
+                <ShowHide config={{trim: 250}}>
+                    {analysis}
+                </ShowHide>
             </section>
             {recommendationSection}
         </div>

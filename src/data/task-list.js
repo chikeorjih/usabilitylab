@@ -44,6 +44,11 @@ class TaskList {
                     severity: 'Medium'
                 }
             ],
+            analysis: [
+                'Of 11 participants who started the path to application (enrollment) on an HMSA.com Web page (e.g; home page, HMSA Health Plans, HMSA Akamai Advantage), 7 immediately navigated to the plan comparison chart for individuals and families.',
+                'When participants reflected on the ease in finding and comparing HMSA health plans, those under 65 years rated it “easy to very easy”, and those 65 and older rated it “easy”. Both groups stated they were “confident” that they were on the right path to finding and applying for health insurance on HMSA.com.',
+                'That said, of the 7 who immediately navigated to the plan comparison page, only 3 (1 the first day and 2 the second) clicked to enroll online or download the application without any prompting or assistance from the moderator. When we looked at the overall ease and confidence rating from these three participants, those over 65 rated the ease of finding and applying for a Medicare Akamai Advantage plan on HMSA easier and were more confident than those under 65.'
+            ],
             recommendations: [
                 {
                     description: 'We noticed some trends and pain points after analying how users performed on this task. We have some recommendations in the form of rough wireframed that might help start the discussion on how to better help the customer sucessfully achieve the task',
@@ -87,6 +92,10 @@ class TaskList {
                     severity: 'High'
                 }
             ],
+            analysis: [
+                'Three of the 6 participants on day 1 were given the task of finding the gym or fitness center benefits they get with their HMSA health insurance plan. One was able to successfully locate the information, but was unable to determine which fitness centers or gyms she could use. The other two abandoned the task and site before finding the benefit information.',
+                'One user who abandoned the task did so when faced with the “Active & Fit” program details (PDF). The other participant who abandoned the task, did so on the “Active & Fit” Web page (https://hmsa.com/well-being/active-and-fit/)when she clicked “1. Find your gym discount”, believing it was a link'
+            ],
             recommendations: []
         },
         {
@@ -117,6 +126,10 @@ class TaskList {
                     theme: 'Information overload',
                     severity: 'Medium-low'
                 }
+            ],
+            analysis: [
+                'Four of the 6 participants on day 2 were given the task of finding a primary physician who accepts their HMSA health insurance plan. Three were successful locating and using the Find a Doctor search and search results; one abandoned the task.',
+                'The participant who abandoned will not use the HMSA site to find a new doctor. Instead, he will ask his friends and family to refer him to doctors they use and then call to find out what insurance that doctor accepts.'
             ],
             recommendations: [
                 {
@@ -166,6 +179,12 @@ class TaskList {
                     severity: 'Medium-low'
                 }
             ],
+            analysis: [
+                'When the participants started the path to application on a Kaiser Permanente Web page (e.g; kpinhawaii.com, etc), 8 immediately navigated to the Shop Plans page.  Again, we asked each participant to rate the ease of the task and their level of confidence.',
+                'On kpinhawaii.com, those under 65 years found the task slightly less easy than on HMSA.com, but were more confident they were on the right path to finding and applying for a plan. For the participants 65 years and older, they rated finding plans as difficult and were not as confident they were in the right place as they felt on HMSA.com',
+                'Of the 7 who navigated to the plan comparison or detail pages, two (1 each day) clicked the “apply” button from one of the plan details page. For kpinhawaii.com, participants under 65 years perceived the ease in finding a plan and deciding to enroll slightly easier and were more confident on average than the participants 65 years and older. In fact, 2 of the 6 participants in the latter group never did find and compare Kaiser Permanente’s Medicare Advantage plans. They only explored the individual and family plans.',
+                'For reasons we will discuss in greater detail, the number of individual and family plans, and the amount of information and consumer (mis)understanding of key health insurance terms render the task of shopping for and selecting the right health insurance plan for an individual or household very difficult.'
+            ],
             recommendations: []
         },
         {
@@ -202,6 +221,10 @@ class TaskList {
                     severity: 'Medium'
                 }
             ],
+            analysis: [
+                'Three of the 6 participants on day 1 were given the task of finding the gym or fitness center benefits they get with their Kaiser Permanente health insurance plan. Two were able to successfully locate the information; one abandoned the task and site before finding the benefit information',
+                'The user who abandoned the task did so when faced with the wall of text in the 2-page “Kaiser Permanente Fit Rewards Home Fitness Kit Flyer” (PDF). One of the participants who successfully found the gym/fitness center benefit did so using Google search, not the navigation or search on kpinhawaii.com.'
+            ],
             recommendations: []
         },
         {
@@ -232,6 +255,10 @@ class TaskList {
                     theme: 'Location & navigatino',
                     severity: 'High'
                 }
+            ],
+            analysis: [
+                'Two of the 6 participants on day 2 were given the task of finding a primary physician who accepts their Kaiser Permanente health insurance plan. Neither were able to successfully locate the information.',
+                'In both cases, the Kaiser Permanente doctor search page proved difficult to understand and use. Both participants tried clicking the “Doctors” option under  “Search type” thinking it was a search box. They never scrolled down to see the Search button at the bottom of the page. Both tried clicking “Locations” under “Search type” as well, thinking it will go to a new page. When little happened, they tried clicking on the map but that was difficult to control and navigate, and once they had clicked Locations, they could not see any doctors, just hospitals and clinics'
             ],
             recommendations: []
         }
