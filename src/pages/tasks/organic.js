@@ -1,5 +1,4 @@
 import React from "react";
-import BarChart from "../../components/BarChart";
 import ShowHide from "../../components/ShowHide";
 
 import femaleSvg from "../../assets/female.svg";

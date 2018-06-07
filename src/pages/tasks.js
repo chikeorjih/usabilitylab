@@ -23,6 +23,12 @@ export default () => (
         </Link>
       </li>
       {taskList}
+      <li>
+        <Link to={{ pathname: '/tasks/authorization' }} className="link">
+          <span>Account access authorization</span>
+          <p>If time permitted, we asked participants to locate the form to grant (or revoke) account access on either hmsa.com or kpinhawaii.com.</p>
+        </Link>
+      </li>
     </ul>
   </div>
 );

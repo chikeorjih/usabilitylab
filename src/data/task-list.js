@@ -96,7 +96,13 @@ class TaskList {
                 'Three of the 6 participants on day 1 were given the task of finding the gym or fitness center benefits they get with their HMSA health insurance plan. One was able to successfully locate the information, but was unable to determine which fitness centers or gyms she could use. The other two abandoned the task and site before finding the benefit information.',
                 'One user who abandoned the task did so when faced with the “Active & Fit” program details (PDF). The other participant who abandoned the task, did so on the “Active & Fit” Web page (https://hmsa.com/well-being/active-and-fit/)when she clicked “1. Find your gym discount”, believing it was a link'
             ],
-            recommendations: []
+            recommendations: [
+                {
+                    description: "The Active&Fit (or Silver&Fit) program details should show the site visitor the gyms, fitness centers, and fitness programs nearest them (using the device location if available). The page can also allow them to enter different addresses/locations, so the visitor can explore what is closest to their work, where they shop, etc.'",
+                    file: null,
+                    fileName: null
+                }
+            ]
         },
         {
             name: 'Find a Doctor on hmsa.com',
