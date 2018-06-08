@@ -42,6 +42,8 @@ import flow12_2 from "../assets/flows/P2-06-KP-path2app.svg";
 import flow12_3 from "../assets/flows/P2-06-organic path2app.svg";
 
 import video1_1 from "../assets/video/1_01_hmsa_path2app.mp4";
+import video2_1 from "../assets/video/1_02_kp_path2app.mp4";
+import video2_2 from "../assets/video/1_02_kp_gym_benefit.mp4";
 import video3_1 from "../assets/video/1_03_hmsa_gym_benefit.mp4";
 import video3_2 from "../assets/video/1_03_kp_path2app.mp4";
 import video4_1 from "../assets/video/1_04_hmsa_path_2_app.mp4";
@@ -198,7 +200,16 @@ class ParticipantList {
                     style: 'default'
                 }
             ],
-            clips: []
+            clips: [
+                {
+                    title: 'Kaiser Permanente Path to Application - Compare Plans',
+                    src: video2_1
+                },
+                {
+                    title: 'Kaiser Gym Benefit - "Google did a better job..."',
+                    src: video2_2
+                }
+            ]
         },
         {
             name: 'Claire C.',
