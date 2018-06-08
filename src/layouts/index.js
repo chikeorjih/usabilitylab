@@ -2,7 +2,7 @@ import React from "react";
 import Link from "gatsby-link";
 import "../styles/styles.scss"
 
-import heroImage from "../assets/people-computer.svg";
+import heroImage from "../assets/HMSA_Logo.png";
 
 const ListLink = props => (
   <li className="nav-item">
