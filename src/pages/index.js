@@ -166,7 +166,7 @@ export default () => (
       <h3>Web page controls and calls-to-action need to be clear and unambiguous.</h3>
       <div className="expandable-content">
         <p>Both HMSA.com and kpinhawaii.com presented consumer participants with Web page content that either did not work as expected or were not controls/buttons at all .</p>
-        <p>On HMSA.com, the “Freedom to Choose” lightbox dialog (see Figure 2, below) showed a map of health care providers and locations in the HMSA network by default. The three tiles – Freedom to choose, Convenient care, and Travel worry free – were misunderstood by every participant who landed on this dialog.</p>
+        <p>On HMSA.com, the “Freedom to Choose” lightbox dialog showed a map of health care providers and locations in the HMSA network by default. The three tiles – Freedom to choose, Convenient care, and Travel worry free – were misunderstood by every participant who landed on this dialog.</p>
         <p>First, the participant would click the “Freedom to choose” tile and there was no obvious change to the map (lack of feedback). Some participants clicked these 2 or 3 times, with the goal of searching for – and then choosing (as the title indicates) – a healthcare provider.</p>
         <p>When that did not work, the participants double-clicked on the map expecting it to zoom in as Google maps works today . This made the content in the dialog difficult, if not impossible, to use.</p>
       </div>

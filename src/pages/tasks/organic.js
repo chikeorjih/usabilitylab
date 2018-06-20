@@ -15,7 +15,7 @@ const organic = (props) => {
                 <p>Regardless, we wanted to observe how they will use the Internet to find and evaluate health insurance plans, as well as record whether they will apply based on the plans and information they find.</p>
                 <p>The task always started in a newly-opened browser window (Google Chrome) on the default page (google.com). From there, they were asked to show us what they did (if they are self-insured) – or will do (if they lose their employer coverage).</p>
                 <p>The first theme we recorded was what they did from the start. All participants used either the browser address bar or the Google search box and did a keyword search.</p>
-                <p>Analysis of all the search words and phrases revealed the most common Google search terms to be “Hawaii,” “health,” and “insurance” (see Figure 1, below).</p>
+                <p>Analysis of all the search words and phrases revealed the most common Google search terms to be “Hawaii,” “health,” and “insurance” (see word cloud, below).</p>
             </ShowHide>
             <h3>Search Terms</h3>
             <img src={wordCloud} alt="word cloud"/>
@@ -80,7 +80,7 @@ const organic = (props) => {
                     <h4>Kaiser Permanente Path to application</h4>
                     <div>
                         <span className="stat">72.7<span className="sub">%</span></span>
-                        <p><strong>8</strong> of the <strong>11</strong> navigated to the sop plans page</p>
+                        <p><strong>8</strong> of the <strong>11</strong> navigated to the shop plans page</p>
                     </div>
                 </div>
                 <ShowHide config={{ trim: 120 }}>

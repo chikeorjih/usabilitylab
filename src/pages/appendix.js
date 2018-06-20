@@ -15,6 +15,7 @@ import Persona2 from "../assets/docs/HMSA_personas_Trey R2.pdf";
 import Persona3 from "../assets/docs/HMSA_personas_Dan.pdf";
 import wires1 from "../assets/pdfs/HMSA_path_to_application.pdf";
 import wires2 from "../assets/pdfs/HMSA_provider_search.pdf";
+import wires3 from "../assets/pdfs/HMSA_gym_benefit.pdf";
 
 import photo1 from "../assets/photos/HMSA_workshop1.jpg";
 import photo2 from "../assets/photos/HMSA_workshop2.jpg";
@@ -65,6 +66,7 @@ export default () => (
     <ul>
       <li><img className="icon" src={pdf}/><a href={wires1}>HMSA path to application wireframes</a></li>
       <li><img className="icon" src={pdf}/><a href={wires2}>HMSA find a doctor wireframes</a></li>
+      <li><img className="icon" src={pdf}/><a href={wires3}>HMSA gym benefits wireframes</a></li>
     </ul>
     <section>
     <h2>Usability Session Gallery</h2>

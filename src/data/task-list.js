@@ -1,5 +1,6 @@
 import wires1 from "../assets/pdfs/HMSA_path_to_application.pdf";
 import wires2 from "../assets/pdfs/HMSA_provider_search.pdf";
+import wires3 from "../assets/pdfs/HMSA_gym_benefit.pdf";
 
 class TaskList {
 
@@ -99,8 +100,8 @@ class TaskList {
             recommendations: [
                 {
                     description: "The Active&Fit (or Silver&Fit) program details should show the site visitor the gyms, fitness centers, and fitness programs nearest them (using the device location if available). The page can also allow them to enter different addresses/locations, so the visitor can explore what is closest to their work, where they shop, etc.'",
-                    file: null,
-                    fileName: null
+                    file: wires3,
+                    fileName: 'Gym benefits recommendations (wireframes)'
                 }
             ]
         },
