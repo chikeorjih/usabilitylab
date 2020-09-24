@@ -30,7 +30,7 @@ import photo8 from "../assets/photos/HMSA_workshop150.jpg";
 export default () => (
   <div className="appendix">
     <h1>Appendix</h1>
-    <p>WWTAL assisted the HMSA.com team in assessing the user experience of HMSA.com as well as one of its primary competitor, Kaiser Permanete(kpinhawaii.com). WWTAL conducted a usability workshop with HMSA, gathered all the results and has provided on this site, the baseline usability research on HMSA.com and kpinhawaii.com.</p>
+    <p>WWTAL assisted the HCP.com team in assessing the user experience of HCP.com as well as one of its primary competitor, Kaiser Permanete(kpinhawaii.com). WWTAL conducted a usability workshop with HCP, gathered all the results and has provided on this site, the baseline usability research on HCP.com and kpinhawaii.com.</p>
     <p>
       Below are the various artifacts and documents used in this study. Included are the kickoff materials, recruiting and moderator guides used in the labs and the final data gathered from the lab.
     </p>
@@ -64,9 +64,9 @@ export default () => (
     </ul>
     <h3>Recommendations</h3>
     <ul>
-      <li><img className="icon" src={pdf}/><a href={wires1}>HMSA path to application wireframes</a></li>
-      <li><img className="icon" src={pdf}/><a href={wires2}>HMSA find a doctor wireframes</a></li>
-      <li><img className="icon" src={pdf}/><a href={wires3}>HMSA gym benefits wireframes</a></li>
+      <li><img className="icon" src={pdf}/><a href={wires1}>HCP path to application wireframes</a></li>
+      <li><img className="icon" src={pdf}/><a href={wires2}>HCP find a doctor wireframes</a></li>
+      <li><img className="icon" src={pdf}/><a href={wires3}>HCP gym benefits wireframes</a></li>
     </ul>
     <section>
     <h2>Usability Session Gallery</h2>

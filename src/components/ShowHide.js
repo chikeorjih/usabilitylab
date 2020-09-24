@@ -25,7 +25,7 @@ class ShowHide extends React.Component {
         const toggleButton = this.state.isExpanded ? '- Show Less' : '+ Show More';
 
         return (
-            <span className="show-hide">
+            <span className={`show-hide ${this.state.isExpanded ? 'open':''}`}>
                 {this.state.text}
                 <span className="text-toggle" onClick={this.handleToggle.bind(this)}>{toggleButton}</span>
             </span>

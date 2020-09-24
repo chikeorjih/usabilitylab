@@ -9,7 +9,10 @@ const BarChart = (props) => {
         <div className="bar-chart">
             {initial}
             <span className="bar" style={{ width: barWidth, background: props.config.color }}>
-                <span className="score">{props.config.score}</span>
+                <span className="score" style={{ background: props.config.color }}>
+                    <span className="caret"  style={{ 'border-top-color': props.config.color }}></span>
+                    {props.config.score}
+                </span>
             </span>
             <span className="total">{props.config.total}</span>
         </div>

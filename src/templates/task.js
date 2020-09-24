@@ -3,8 +3,8 @@ import BarChart from "../components/BarChart";
 import TaskList from "../data/task-list";
 import ShowHide from "../components/ShowHide";
 
-import femaleSvg from "../assets/female.svg";
-import maleSvg from "../assets/male.svg";
+import femalePng from "../assets/woman.png";
+import malePng from "../assets/man.png";
 
 const task = (props) => {
     const currentTask = TaskList.getCurrentTask(props.pathContext.url) || TaskList.getShape();
@@ -12,7 +12,7 @@ const task = (props) => {
     const getParticipants = (participants) => {
         return (
             participants.map((participant, i) => {
-                return <img src={participant === 'female'? femaleSvg : maleSvg} key={i}/>;
+                return <img src={participant === 'female'? femalePng : malePng} key={i}/>;
             })
         );
     };
@@ -35,7 +35,8 @@ const task = (props) => {
     });
 
     const usabilityIssues = currentTask.issues.map((issue,i) => {
-        const color = issue.severity === "Low" ? '#75de8b' : (issue.severity === "High" ? '#f76161' : '#e6b458')
+        const color = issue.severity === "Low" ? '#089225' : (issue.severity === "High" ? '#9a1414' : '#b38229');
+        const bkg = issue.severity === "Low" ? '#c8f1d3' : (issue.severity === "High" ? '#ffc6c6' : '#ffebc7');
 
         return (
             <div className="issue" key={i}>
@@ -45,7 +46,7 @@ const task = (props) => {
                     <span className="label">Participants</span>
                 </span>
                 <span className="severity-wrapper">
-                    <span className="severity" style={{background: color}}>{issue.severity}</span>
+                    <span className="severity" style={{background: bkg, color: color}}>{issue.severity}</span>
                     <span className="label">Severity</span>
                 </span>
             </div>
@@ -77,15 +78,15 @@ const task = (props) => {
         <div>
             <h1>{currentTask.name}</h1>
             <p>{currentTask.description}</p>
-            <section>
+            <section className="borderless">
                 <div className="stat-paragraph">
                     <h3>Task Completion Rate</h3>
-                    <div>
+                    <div className="completion-rate">
                         <span className="stat">{currentTask.completionRate}<span className="sub">%</span></span>
                         <p><strong>{currentTask.completionBreakdown[0].score}</strong> out <strong>{currentTask.completionTotalParticipants}</strong> participants successfully completed the task without any training or assistance.</p>
                     </div>
                 </div>
-                <h4>Completion Breakdown</h4>
+                <h4 className="completion-breakdown">Completion Breakdown</h4>
                 {completionBreakdown}
             </section>
             <section>

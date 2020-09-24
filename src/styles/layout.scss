@@ -1,5 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
+
 h1,h2,h3,h4,h5,p,span {
     color: $color-gray-dark;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Merriweather', serif;
 }
 
 h1 {
@@ -8,7 +14,7 @@ h1 {
 }
 
 h2 {
-    margin: 1rem 0;
+    margin: 2rem 0 1rem;
     font-size: 1.2rem;
 }
 
@@ -25,6 +31,12 @@ a {
 .flex {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+}
+
+.highlight {
+    background: #fffbef;
+    border-bottom: .2em solid #ffc72d;
 }
 
 .header, .content{
@@ -35,27 +47,39 @@ a {
 
 .header-wrapper {
     background: $brand-primary-color;
+    border-bottom: 1px solid $color-gray;
 }
 
 .header {
-    background: $brand-primary-color;
     position: relative;
+    background: $brand-primary-color;
 
     .logo {
         color: $color-white;
         text-decoration: none;
+        margin-right: 4rem;
     }
 
     h2 {
+        display: inline-block;
         margin: 0;
         font-size: 1.6rem;
-        color: $color-white;
+        padding-left: 3rem;
+        color: white;
 
-        .sub {
-            font-weight: 400;
-            color: $brand-primary-light;
-            font-size: 1.15rem;
+        .logo-image {
+            width: 2.7rem;
+            margin: -.6rem 0 0 -3rem;
+            position: absolute;
         }
+    }
+
+    .sub {
+        display: inline-block;
+        font-weight: 200;
+        color: $brand-primary-light;
+        font-size: 1.15rem;
+        margin-left: .3rem;
     }
 
     .hero-image {
@@ -66,18 +90,77 @@ a {
     }
 }
 
+.hero-extend {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 4.4rem;
+    border-top: 130px solid $brand-primary-color;
+    border-left: 0px solid transparent;
+    border-right: 250rem solid transparent;
+    background: transparent;
+    height:  5rem;
+}
+
+.objective {
+    padding: 1rem 1.5rem;
+    position: relative;
+    margin: -1rem 0 2rem;
+    background: url('../assets/teacher.svg') 29rem 1rem no-repeat, white;
+    background-size: 17rem;
+    border-bottom: 1px solid #dea865;
+    box-shadow: 0 .3rem #e4e4e4;
+    z-index: 1;
+
+    animation: slideFadeInTop ease-out $animation-duration;
+    animation-iteration-count: 1;
+
+    h1 {
+        font-size: 1.6rem;
+        color: black;
+        margin-bottom: 1.5rem;
+    }
+
+    p {
+        width: 80%;
+        margin: 0;
+        z-index: 1;
+    }
+
+    .illustration {
+        position: absolute;
+        width: 20rem;
+        right: 0;
+        bottom: -4rem;
+        z-index: 0;
+    }
+}
+
 .indent {
     margin: 1rem 1rem 1rem 2.5rem;
+}
+
+.content-wrapper, html {
+    background: $color-gray-faint;
 }
 
 .content {
     padding: 2rem 1rem;
 }
 
+.insights {
+    padding: 1.5rem 3rem 1rem;
+    background: url('../assets/lightbulb.svg')  0rem 0rem no-repeat;
+    background-size: 2.5rem;;
+    margin-top: 1rem;
+    margin-left: -.6rem;
+}
+
 .text-toggle {
     cursor: pointer;
     margin: 0 .5rem;
-    color: $text-color-link;
+    color: #8842c7;
+    font-weight: bold;
 }
 
 table {
@@ -97,7 +180,7 @@ table {
     }
 
     img {
-        width: 1.3rem;
+        width: 2rem;
         margin-bottom: 00;
     }
 
@@ -117,15 +200,53 @@ table {
     padding: 1rem;
 }
 
+.show-hide {
+    transition: all .2s ease-in;
+    height: 2rem;
+
+    &.open {
+        height: 10rem;
+    }
+}
+
+.expandable-wrapper {
+    padding-left: 1.2rem;
+    border-left: 0.1rem solid $color-gray;
+    margin-left: 1.1rem;
+}
+
 .expandable {
     @include card;
     transition: all 0.3s ease-in-out;
+    position: relative;
+    animation: slideFadeInRight ease-out $animation-duration;
+    animation-iteration-count: 1;
+
+    &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 1rem;
+        height: 1rem;
+        background: $color-gray;
+        border-radius: 50%;
+        left: -1.7rem;
+        top: 2rem;
+        border: 0.2rem solid white;
+    }
 
     .expandable-initial {
         display: flex;
         align-items: center;
         padding: 1rem;
-        transition: all 0.1s ease-in-out;
+        background: linear-gradient(90deg,
+            white 0%,
+            white 50%,
+            $brand-primary-color 50%,
+            $brand-primary-color 100%
+        );
+        background-size: 200%;
+        transition: background-position 0.15s ease-in;
     }
 
     .number {
@@ -135,14 +256,15 @@ table {
         margin: 0 1rem;
  
          span {
-             color: $brand-color-green;
-             font-weight: bold;
-             background: $brand-color-green-light;
-             border: 2px solid $brand-color-green;
-             border-radius: 50%;
-             width: 1.7rem;
-             height: 1.6rem;
-             text-align: center;
+            color: #383838;
+            font-weight: bold;
+            background: #ffe398;
+            border: 1px solid #bb952c;
+            border-radius: 50%;
+            width: 2rem;
+            height: 2rem;
+            text-align: center;
+            padding-top: .3rem;
          }
      }
  
@@ -155,12 +277,13 @@ table {
  
      button {
         padding: .15rem .5rem;
-        border: 1px solid $brand-primary-color;
-        color: $brand-primary-color;
-        background: $color-blue-light;
+        border: 1px solid #3809fd;
+        color: white;
+        background: $brand-primary-color;
         margin: .5rem;
-        flex-basis: 2rem;
-        font-size: .8rem;
+        flex-basis: 3rem;
+        font-size: .9rem;
+        white-space: nowrap;
         outline: none;
         cursor: pointer;
         transition: all 0.1s ease-in-out;
@@ -192,13 +315,27 @@ table {
         border: 1px solid $brand-primary-color;
         box-shadow: 0px 5px 10px $box-shadow-dark;
 
+        &:before {
+            left: -1.75rem;
+            top: 1.95rem;
+        }
+
         .expandable-initial {
-            background: $color-blue-light;
+            background-position: 100% 100%;
+        }
+
+        .title {
+            color: white;
+        }
+
+        .number span{
+            border: 1px solid $brand-primary-color
         }
 
         button {
-            color: $color-white;
-            background: $brand-primary-color;
+            color: $brand-primary-color;
+            background: white;
+            font-weight: bold;
         }
     }
 }
@@ -224,17 +361,31 @@ table {
 section {
     border-top: 1px solid $color-gray;
     padding: 2rem 0;
+
+    &.borderless {
+        border: 0;
+    }
+}
+
+.completion-rate {
+    padding-left: 3rem;
+    background: url('../assets/trophy.png') no-repeat 0rem 1.3rem;
+    background-size: 3.5rem;
 }
 
 .stat-paragraph {
-    
+    background: white;
+    border: 1px solid #dea865;
+    box-shadow: 0 0.3rem #e4e4e4;
+    padding: 1rem 1.5rem;
+
     div {
         display: flex;
         align-items: center;
     }
 
     h3 {
-        margin-bottom: 1.5rem;
+        margin-bottom: .5rem;
     }
 
     p {
@@ -252,10 +403,14 @@ section {
         color: $color-gray-medium;
     }
 }
+.completion-breakdown {
+    margin-bottom: 2rem;
+}
 
 .bar-wrapper {
     display: flex;
     align-items: center;
+    margin: .6rem 0 0;
 
     span {
         flex: 0 1 6rem;
@@ -302,6 +457,29 @@ section {
             display: none;
         }
     }
+
+    .hero-extend {
+        display: none;
+    }
+
+
+    .objective {
+        p {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: $screen-tablet) and (min-width: $screen-phone) {
+    .hero-extend {
+        display: none;
+    }
+    
+    .objective {
+        p {
+            width: 100%;
+        }
+    }
 }
 
 @media (max-width: $screen-phone-small) and (min-width: 0px) {
@@ -322,5 +500,29 @@ section {
 
     .participant-page .details img {
         width: 6rem;
+    }
+}
+
+@keyframes slideFadeInTop{
+    0% {
+        opacity: 80%;
+        transform: translateY(-1rem);
+        background-position: 29rem 3rem;
+    }
+    100% {
+        opacity: 100%;
+        transform: translateY(0);
+        background-position: 29rem 1rem
+    }
+}
+
+@keyframes slideFadeInRight{
+    0% {
+        opacity: 80%;
+        transform: translateX(1rem);
+    }
+    100% {
+        opacity: 100%;
+        transform: translateX(0);
     }
 }

@@ -1,5 +1,5 @@
 .bar-chart {
-    height: .8rem;
+    height: .3rem;
     background: $color-light-gray;
     border-radius: .3rem;
     position: relative;
@@ -14,10 +14,25 @@
 
         .score {
             position: absolute;
-            right: -.2rem;
-            top: -1.2rem;
+            right: -.6rem;
+            top: -1.5rem;
             font-weight: bold;
             font-size: .9rem;
+            background: red;
+            border-radius: 2rem;
+            color: white;
+            width: 1.3rem;
+            text-align: center;
+            padding: .1rem 0 0;
+
+            .caret {
+                position: absolute;
+                top: 50%;
+                margin-top: 8px;
+                left: 4px;
+                border: solid 6px transparent;
+                z-index: 1;
+            }
         }
     }
 

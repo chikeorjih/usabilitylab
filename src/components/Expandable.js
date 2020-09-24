@@ -34,7 +34,7 @@ class Expandable extends React.Component {
 
     render() {
         const expandableCss = this.state.isExpanded ? 'expanded' : 'collapsed';
-        const buttonText = this.state.isExpanded ? 'Collapse' : 'Expand';
+        const buttonText = this.state.isExpanded ? 'Got it!' : 'Explain';
 
         return (
             <div className={`expandable ${expandableCss}`}>

@@ -10,10 +10,10 @@ const ParticipantPreview = (props) => {
                 <div className="info">
                     <h4>{props.person.name}</h4>
                     <div className="row">
-                        <span><span className="label">Gender:</span><strong>{props.person.gender}</strong></span>
-                        <span><span className="label">Age:</span><strong>{props.person.age}</strong></span>
+                        <span className="label-row"><span className="label">Gender:</span>{props.person.gender}</span>
+                        <span className="label-row"><span className="label">Age:</span>{props.person.age}</span>
                     </div>
-                    <span><span className="label">Occupation:</span><strong>{props.person.occupation}</strong></span>
+                    <span><span className="label">Occupation:</span>{props.person.occupation}</span>
                 </div>
             </div>
         </Link>

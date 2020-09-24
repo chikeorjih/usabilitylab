@@ -1,5 +1,6 @@
 .nav {
     margin: 1rem 0 0;
+    display: inline-block;
 }
 
 .nav-item {
@@ -11,11 +12,12 @@
         color: $brand-primary-light;
         text-decoration: none;
         padding: 0 .8rem .5rem;
-        font-size: .9rem;
+        font-size: 1rem;
     }
 
     a.active {
-        color: $color-white;
+        color: white;
         border-bottom: 4px solid $brand-color-yellow;
+        font-weight: bold;
     }
 }

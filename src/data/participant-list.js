@@ -1,15 +1,15 @@
-import participant1 from "../assets/participants/participant1.png";
-import participant2 from "../assets/participants/participant2.png";
-import participant3 from "../assets/participants/participant3.png";
-import participant4 from "../assets/participants/participant4.png";
-import participant5 from "../assets/participants/participant5.png";
-import participant6 from "../assets/participants/participant6.png";
-import participant7 from "../assets/participants/participant7.png";
-import participant8 from "../assets/participants/participant8.png";
-import participant9 from "../assets/participants/participant9.png";
-import participant10 from "../assets/participants/participant10.png";
-import participant11 from "../assets/participants/participant11.png";
-import participant12 from "../assets/participants/participant12.png";
+import participant1 from "../assets/participants/Girl1.svg";
+import participant2 from "../assets/participants/Boy1.svg";
+import participant3 from "../assets/participants/Woman1.svg";
+import participant4 from "../assets/participants/Woman2.svg";
+import participant5 from "../assets/participants/Girl2.svg";
+import participant6 from "../assets/participants/Woman4.svg";
+import participant7 from "../assets/participants/Boy2.svg";
+import participant8 from "../assets/participants/Woman3.svg";
+import participant9 from "../assets/participants/Man1.svg";
+import participant10 from "../assets/participants/Woman4.svg";
+import participant11 from "../assets/participants/Man2.svg";
+import participant12 from "../assets/participants/Woman5.svg";
 
 import flow1_1 from "../assets/flows/P1-01-organic-HMSA path2app.svg";
 import flow1_2 from "../assets/flows/P1-01-KP-path2app.svg";
@@ -79,7 +79,7 @@ class ParticipantList {
 
     static all = [
         {
-            name: 'Ashley A.',
+            name: 'Anna C.',
             gender: 'Female',
             age: 27,
             occupation: 'Lifeguard',
@@ -89,7 +89,7 @@ class ParticipantList {
                 { name: 'Aetna', score: 1 },
                 { name: 'AlohaCare', score: 1 },
                 { name: 'HMAA', score: 2 }, 
-                { name: 'HMSA', score: 4 },
+                { name: 'HCP', score: 4 },
                 { name: 'Kaiser', score: 4 },
                 { name: 'Ohana', score: 2 },
                 { name: 'UHA', score: 1 },
@@ -104,21 +104,21 @@ class ParticipantList {
                     confidence: 1
                 },
                 {
-                    task: 'HMSA Path to Application',
+                    task: 'HCP Path to Application',
                     url: 'hmsa-path-to-app',
                     completed: false,
                     seq: 5,
                     confidence: 5
                 },
                 {
-                    task: 'HMSA Gym Membership',
+                    task: 'HCP Gym Membership',
                     url: 'hmsa-gym-membership',
                     completed: false,
                     seq: 3,
                     confidence: 3
                 },
                 {
-                    task: 'HMSA Find a Doctor',
+                    task: 'HCP Find a Doctor',
                     url: 'hmsa-find-doctor',
                     completed: false,
                     seq: 5,
@@ -127,7 +127,7 @@ class ParticipantList {
             ],
             images: [
                 { 
-                    label: "HMSA Path to Application", 
+                    label: "HCP Path to Application", 
                     src: flow1_1,
                     url: 'hmsa-path-to-app',
                     style: 'default'
@@ -141,13 +141,13 @@ class ParticipantList {
             ],
             clips: [
                 {
-                    title: 'HMSA Path to Application - "Make it Better"',
+                    title: 'HCP Path to Application - "Make it Better"',
                     src: video1_1
                 }
             ]
         },
         {
-            name: 'James G.',
+            name: 'John J.',
             gender: 'Male',
             age: 24,
             occupation: 'Student',
@@ -157,7 +157,7 @@ class ParticipantList {
                 { name: 'Aetna', score: 3 },
                 { name: 'AlohaCare', score: 2 },
                 { name: 'HMAA', score: 2 }, 
-                { name: 'HMSA', score: 4 },
+                { name: 'HCP', score: 4 },
                 { name: 'Kaiser', score: 4 },
                 { name: 'Ohana', score: 3 },
                 { name: 'UHA', score: 4 },
@@ -165,7 +165,7 @@ class ParticipantList {
             ],
             tasks: [
                 {
-                    task: 'HMSA Path to Application',
+                    task: 'HCP Path to Application',
                     url: 'hmsa-path-to-app',
                     completed: true,
                     seq: 4,
@@ -212,7 +212,7 @@ class ParticipantList {
             ]
         },
         {
-            name: 'Claire C.',
+            name: 'Carrie K.',
             gender: 'Female',
             age: 63,
             occupation: 'Executive Assitant',
@@ -222,7 +222,7 @@ class ParticipantList {
                 { name: 'Aetna', score: 0 },
                 { name: 'AlohaCare', score: 0 },
                 { name: 'HMAA', score: 0 }, 
-                { name: 'HMSA', score: 4 },
+                { name: 'HCP', score: 4 },
                 { name: 'Kaiser', score: 5 },
                 { name: 'Ohana', score: 0 },
                 { name: 'UHA', score: 0 },
@@ -237,14 +237,14 @@ class ParticipantList {
                     confidence: 1
                 },
                 {
-                    task: 'HMSA Path to Application',
+                    task: 'HCP Path to Application',
                     url: 'hmsa-path-to-app',
                     completed: false,
                     seq: 4,
                     confidence: 3
                 },
                 {
-                    task: 'HMSA Gym Membership',
+                    task: 'HCP Gym Membership',
                     url: 'hmsa-gym-membership',
                     completed: true,
                     seq: 3,
@@ -260,7 +260,7 @@ class ParticipantList {
             ],
             images: [
                 { 
-                    label: "HMSA Path to Application", 
+                    label: "HCP Path to Application", 
                     src: flow3_1,
                     url: 'hmsa-path-to-app',
                     style: 'large'
@@ -280,7 +280,7 @@ class ParticipantList {
             ],
             clips: [
                 {
-                    title: 'HMSA Gym Benefits - "Make it easer to find"',
+                    title: 'HCP Gym Benefits - "Make it easer to find"',
                     src: video3_1
                 },
                 {
@@ -290,7 +290,7 @@ class ParticipantList {
             ]
         },
         {
-            name: 'Bhakti P.',
+            name: 'Shakti C.',
             gender: 'Female',
             age: 47,
             occupation: 'Self Employed',
@@ -300,7 +300,7 @@ class ParticipantList {
                 { name: 'Aetna', score: 0 },
                 { name: 'AlohaCare', score: 0 },
                 { name: 'HMAA', score: 0 }, 
-                { name: 'HMSA', score: 5 },
+                { name: 'HCP', score: 5 },
                 { name: 'Kaiser', score: 3 },
                 { name: 'Ohana', score: 0 },
                 { name: 'UHA', score: 0 },
@@ -315,14 +315,14 @@ class ParticipantList {
                     confidence: 3
                 },
                 {
-                    task: 'HMSA Path to Application',
+                    task: 'HCP Path to Application',
                     url: 'hmsa-path-to-app',
                     completed: false,
                     seq: 5,
                     confidence: 5
                 },
                 {
-                    task: 'HMSA Gym Membership',
+                    task: 'HCP Gym Membership',
                     url: 'hmsa-gym-membership',
                     completed: true,
                     seq: 4,
@@ -338,7 +338,7 @@ class ParticipantList {
             ],
             images: [
                 { 
-                    label: "HMSA Path to Application", 
+                    label: "HCP Path to Application", 
                     src: flow4_1,
                     url: 'hmsa-path-to-app',
                     style: 'large'
@@ -358,13 +358,13 @@ class ParticipantList {
             ],
             clips: [
                 {
-                    title: 'HMSA Path to Application - Plan Details - Make it better',
+                    title: 'HCP Path to Application - Plan Details - Make it better',
                     src: video4_1
                 }
             ]
         },
         {
-            name: 'Jeanine L.',
+            name: 'Jean O.',
             gender: 'Female',
             age: 44,
             occupation: 'Material Handler',
@@ -374,7 +374,7 @@ class ParticipantList {
                 { name: 'Aetna', score: 3 },
                 { name: 'AlohaCare', score: 3 },
                 { name: 'HMAA', score: 4 }, 
-                { name: 'HMSA', score: 4 },
+                { name: 'HCP', score: 4 },
                 { name: 'Kaiser', score: 4 },
                 { name: 'Ohana', score: 3 },
                 { name: 'UHA', score: 5 },
@@ -405,7 +405,7 @@ class ParticipantList {
             ],
             images: [
                 { 
-                    label: "HMSA Path to Application", 
+                    label: "HCP Path to Application", 
                     src: flow5_1,
                     url: 'hmsa-path-to-app',
                     style: 'default'
@@ -425,7 +425,7 @@ class ParticipantList {
             ]
         },
         {
-            name: 'Gabriel G.',
+            name: 'Garry J.',
             gender: 'male',
             age: 34,
             occupation: 'Starbucks Barista',
@@ -435,7 +435,7 @@ class ParticipantList {
                 { name: 'Aetna', score: 3 },
                 { name: 'AlohaCare', score: 4 },
                 { name: 'HMAA', score: 3 }, 
-                { name: 'HMSA', score: 5 },
+                { name: 'HCP', score: 5 },
                 { name: 'Kaiser', score: 4 },
                 { name: 'Ohana', score: 2 },
                 { name: 'UHA', score: 2 },
@@ -466,7 +466,7 @@ class ParticipantList {
             ],
             images: [
                 { 
-                    label: "HMSA Path to Application", 
+                    label: "HCP Path to Application", 
                     src: flow6_1,
                     url: 'hmsa-path-to-app',
                     style: 'large'
@@ -494,7 +494,7 @@ class ParticipantList {
             ]
         },
         {
-            name: 'Dennis L.',
+            name: 'Don K.',
             gender: 'Male',
             age: 68,
             occupation: 'Retired',
@@ -504,7 +504,7 @@ class ParticipantList {
                 { name: 'Aetna', score: 3 },
                 { name: 'AlohaCare', score: 3 },
                 { name: 'HMAA', score: 3 }, 
-                { name: 'HMSA', score: 4 },
+                { name: 'HCP', score: 4 },
                 { name: 'Kaiser', score: 4 },
                 { name: 'Ohana', score: 3 },
                 { name: 'UHA', score: 3 },
@@ -519,14 +519,14 @@ class ParticipantList {
                     confidence: 5
                 },
                 {
-                    task: 'HMSA Path to Application',
+                    task: 'HCP Path to Application',
                     url: 'hmsa-path-to-app',
                     completed: false,
                     seq: 3,
                     confidence: 4
                 },
                 {
-                    task: 'HMSA Find a Doctor',
+                    task: 'HCP Find a Doctor',
                     url: 'hmsa-find-doctor',
                     completed: false,
                     seq: 3,
@@ -542,7 +542,7 @@ class ParticipantList {
             ],
             images: [
                 { 
-                    label: "HMSA Path to Application", 
+                    label: "HCP Path to Application", 
                     src: flow7_1,
                     url: 'hmsa-path-to-app',
                     style: 'large'
@@ -562,19 +562,19 @@ class ParticipantList {
             ],
             clips: [
                 {
-                    title: 'HMSA Path to Application - "I will ask friends"',
+                    title: 'HCP Path to Application - "I will ask friends"',
                     src: video7_1
                 },
                 {
-                    title: 'HMSA Path to Application - Freedom to choose',
+                    title: 'HCP Path to Application - Freedom to choose',
                     src: video7_2
                 },
                 {
-                    title: 'HMSA Path to Application - Call customer service',
+                    title: 'HCP Path to Application - Call customer service',
                     src: video7_3
                 },
                 {
-                    title: 'HMSA Path to Application - Deductible',
+                    title: 'HCP Path to Application - Deductible',
                     src: video7_4
                 },
                 {
@@ -604,7 +604,7 @@ class ParticipantList {
             ]
         },
         {
-            name: 'Joyce L.',
+            name: 'Joy P.',
             gender: 'Female',
             age: 68,
             occupation: 'Retired',
@@ -614,7 +614,7 @@ class ParticipantList {
                 { name: 'Aetna', score: 3 },
                 { name: 'AlohaCare', score: 3 },
                 { name: 'HMAA', score: 3 }, 
-                { name: 'HMSA', score: 3 },
+                { name: 'HCP', score: 3 },
                 { name: 'Kaiser', score: 4 },
                 { name: 'Ohana', score: 3 },
                 { name: 'UHA', score: 3 },
@@ -636,7 +636,7 @@ class ParticipantList {
                     confidence: 2
                 },
                 {
-                    task: 'HMSA Path to Application',
+                    task: 'HCP Path to Application',
                     url: 'hmsa-path-to-app',
                     completed: false,
                     seq: 4,
@@ -645,7 +645,7 @@ class ParticipantList {
             ],
             images: [
                 { 
-                    label: "HMSA Path to Application", 
+                    label: "HCP Path to Application", 
                     src: flow8_1,
                     url: 'hmsa-path-to-app',
                     style: 'default'
@@ -659,7 +659,7 @@ class ParticipantList {
             ],
             clips: [
                 {
-                    title: 'HMSA Path to Application - Find your doctor',
+                    title: 'HCP Path to Application - Find your doctor',
                     src: video8_1
                 },
                 {
@@ -673,7 +673,7 @@ class ParticipantList {
             ]
         },
         {
-            name: 'Clifford L.',
+            name: 'Clint P.',
             gender: 'Male',
             age: 65,
             occupation: 'Retired Teacher',
@@ -683,7 +683,7 @@ class ParticipantList {
                 { name: 'Aetna', score: 0 },
                 { name: 'AlohaCare', score: 0 },
                 { name: 'HMAA', score: 0 }, 
-                { name: 'HMSA', score: 4 },
+                { name: 'HCP', score: 4 },
                 { name: 'Kaiser', score: 3 },
                 { name: 'Ohana', score: 0 },
                 { name: 'UHA', score: 0 },
@@ -698,14 +698,14 @@ class ParticipantList {
                     confidence: 1
                 },
                 {
-                    task: 'HMSA Path to Application',
+                    task: 'HCP Path to Application',
                     url: 'hmsa-path-to-app',
                     completed: true,
                     seq: 3,
                     confidence: 3
                 },
                 {
-                    task: 'HMSA Find a Doctor',
+                    task: 'HCP Find a Doctor',
                     url: 'hmsa-find-doctor',
                     completed: true,
                     seq: 4,
@@ -714,7 +714,7 @@ class ParticipantList {
             ],
             images: [
                 { 
-                    label: "HMSA Path to Application", 
+                    label: "HCP Path to Application", 
                     src: flow9_1,
                     url: 'hmsa-path-to-app',
                     style: 'default'
@@ -728,15 +728,15 @@ class ParticipantList {
             ],
             clips: [
                 {
-                    title: 'HMSA Path to Application - "I\'d Rather go to a workshop"',
+                    title: 'HCP Path to Application - "I\'d Rather go to a workshop"',
                     src: video9_1
                 },
                 {
-                    title: 'HMSA Path to Application - Talk to a real person',
+                    title: 'HCP Path to Application - Talk to a real person',
                     src: video9_2
                 },
                 {
-                    title: 'HMSA Path to Application - Make it better with comparisons',
+                    title: 'HCP Path to Application - Make it better with comparisons',
                     src: video9_3
                 },
                 {
@@ -746,7 +746,7 @@ class ParticipantList {
             ]
         },
         {
-            name: 'Jane B.',
+            name: 'Jan C.',
             gender: 'Female',
             age: 66,
             occupation: 'Retired Manager',
@@ -756,7 +756,7 @@ class ParticipantList {
                 { name: 'Aetna', score: 0 },
                 { name: 'AlohaCare', score: 0 },
                 { name: 'HMAA', score: 0 }, 
-                { name: 'HMSA', score: 5 },
+                { name: 'HCP', score: 5 },
                 { name: 'Kaiser', score: 5 },
                 { name: 'Ohana', score: 0 },
                 { name: 'UHA', score: 0 },
@@ -785,14 +785,14 @@ class ParticipantList {
                     confidence: 1
                 },
                 {
-                    task: 'HMSA Path to Application',
+                    task: 'HCP Path to Application',
                     url: 'hmsa-path-to-app',
                     completed: true,
                     seq: 4,
                     confidence: 4
                 },
                 {
-                    task: 'HMSA Find a Doctor',
+                    task: 'HCP Find a Doctor',
                     url: 'hmsa-find-doctor',
                     completed: true,
                     seq: 4,
@@ -801,7 +801,7 @@ class ParticipantList {
             ],
             images: [
                 { 
-                    label: "HMSA Path to Application", 
+                    label: "HCP Path to Application", 
                     src: flow10_1,
                     url: 'hmsa-path-to-app',
                     style: 'default'
@@ -821,11 +821,11 @@ class ParticipantList {
             ],
             clips: [
                 {
-                    title: 'HMSA Find a doctor - "God, this is small"',
+                    title: 'HCP Find a doctor - "God, this is small"',
                     src: video10_1
                 },
                 {
-                    title: 'HMSA Path to Application - Make it better',
+                    title: 'HCP Path to Application - Make it better',
                     src: video10_2
                 },
                 {
@@ -839,7 +839,7 @@ class ParticipantList {
             ]
         },
         {
-            name: 'Rolf N.',
+            name: 'Ralph O.',
             gender: 'Male',
             age: 73,
             occupation: 'Retired Technician',
@@ -849,7 +849,7 @@ class ParticipantList {
                 { name: 'Aetna', score: 0 },
                 { name: 'AlohaCare', score: 0 },
                 { name: 'HMAA', score: 0 }, 
-                { name: 'HMSA', score: 0 },
+                { name: 'HCP', score: 0 },
                 { name: 'Kaiser', score: 0 },
                 { name: 'Ohana', score: 0 },
                 { name: 'UHA', score: 0 },
@@ -864,14 +864,14 @@ class ParticipantList {
                     confidence: 4
                 },
                 {
-                    task: 'HMSA Path to Application',
+                    task: 'HCP Path to Application',
                     url: 'hmsa-path-to-app',
                     completed: false,
                     seq: 5,
                     confidence: 5
                 },
                 {
-                    task: 'HMSA Find a Doctor',
+                    task: 'HCP Find a Doctor',
                     url: 'hmsa-find-doctor',
                     completed: true,
                     seq: 4,
@@ -880,7 +880,7 @@ class ParticipantList {
             ],
             images: [
                 { 
-                    label: "HMSA Path to Application", 
+                    label: "HCP Path to Application", 
                     src: flow11_1,
                     url: 'hmsa-path-to-app',
                     style: 'large'
@@ -894,13 +894,13 @@ class ParticipantList {
             ],
             clips: [
                 {
-                    title: 'HMSA Path to Application - Talk to real people',
+                    title: 'HCP Path to Application - Talk to real people',
                     src: video11_1
                 }
             ]
         },
         {
-            name: 'Adeline S.',
+            name: 'Annie D.',
             gender: 'Female',
             age: 80,
             occupation: 'Realtor',
@@ -910,7 +910,7 @@ class ParticipantList {
                 { name: 'Aetna', score: 0 },
                 { name: 'AlohaCare', score: 0 },
                 { name: 'HMAA', score: 0 }, 
-                { name: 'HMSA', score: 0 },
+                { name: 'HCP', score: 0 },
                 { name: 'Kaiser', score: 0 },
                 { name: 'Ohana', score: 0 },
                 { name: 'UHA', score: 0 },
@@ -925,7 +925,7 @@ class ParticipantList {
                     confidence: 3
                 },
                 {
-                    task: 'HMSA Path to Application',
+                    task: 'HCP Path to Application',
                     url: 'hmsa-path-to-app',
                     completed: false,
                     seq: 2,
@@ -941,7 +941,7 @@ class ParticipantList {
             ],
             images: [
                 { 
-                    label: "HMSA Path to Application", 
+                    label: "HCP Path to Application", 
                     src: flow12_1,
                     url: 'hmsa-path-to-app',
                     style: 'large'
@@ -961,7 +961,7 @@ class ParticipantList {
             ],
             clips: [
                 {
-                    title: 'HMSA Path to Application - "I\'m lazy..."',
+                    title: 'HCP Path to Application - "I\'m lazy..."',
                     src: video12_1
                 }
             ]

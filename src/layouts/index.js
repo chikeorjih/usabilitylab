@@ -2,7 +2,7 @@ import React from "react";
 import Link from "gatsby-link";
 import "../styles/styles.scss"
 
-import heroImage from "../assets/HMSA_Logo.png";
+import heroImage from "../assets/health.png";
 
 const ListLink = props => (
   <li className="nav-item">
@@ -17,7 +17,11 @@ export default ({ children } = {}) => (
         <div className="header-wrapper">
           <header className="header">
             <Link to="/" className="logo">
-              <h2>HMSA <span className="sub"> | Usability Lab</span></h2>
+              <h2>
+                <img className="logo-image" src={heroImage} alt="logo image"/>
+                HCP
+              </h2>
+              <span className="sub"> | Usability Lab</span>
             </Link>
             <ul className="nav">
               <ListLink to="/" addExact={true}>Summary</ListLink>
@@ -25,7 +29,6 @@ export default ({ children } = {}) => (
               <ListLink to="/participants">Participants</ListLink>
               <ListLink to="/appendix">Appendix</ListLink>
             </ul>
-            <img className="hero-image" src={heroImage} alt="gero image"/>
           </header>
         </div>
         <div className="content-wrapper">

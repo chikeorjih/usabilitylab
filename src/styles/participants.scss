@@ -17,7 +17,7 @@
             border: 1px solid $brand-primary-color;
 
             h4 {
-                color: $color-blue-bright;
+                color: $brand-primary-color;
             }
         }
 
@@ -27,6 +27,7 @@
             height: 3rem;
             border-radius: 50%;
             margin: 0 auto;
+            border: 1px solid #a570d6;
         }
 
         h4 {
@@ -37,6 +38,10 @@
 
         span {
             display: block;
+        }
+
+        .label-row {
+            margin-right: 2rem;
         }
 
         .info {
@@ -50,7 +55,8 @@
 
         .label {
             display: block;
-            font-size: .9rem;
+            font-size: 1rem;
+            font-weight: bold;
         }
 
         strong {
@@ -68,20 +74,26 @@
         font-weight: bold;
         color: $text-color-link;
         text-decoration: underline;
-        padding-left: 8%;
     }
 
     .task-title {
         display: block;
         margin: .5rem 0 1rem;
         width: 100%;
-        padding-left: 8%;
         font-size: 1rem;
+    }
+
+    a, .task-title {
+        padding-left: 2rem;
+        margin-bottom: 0;
     }
 
     .details {
         display: flex;
         align-items: center;
+        background: url('../assets/people.png') no-repeat 95% 1.3rem;
+        background-size: 44%;
+        padding-bottom: 1rem;
 
         .avatar {
             margin-right: 1rem;
@@ -91,6 +103,8 @@
             border-radius: 50%;
             width: 5rem;
             margin: 1rem 0.5rem;
+            border: 1px solid #a570d6;
+            background: white;
         }
 
         h2 {
@@ -103,6 +117,8 @@
 
         .label {
             display: inline-block;
+            font-weight: bold;
+            margin-right: .5rem;
         }
     }
 
@@ -112,10 +128,10 @@
 }
 
 .company-ratings {
-    margin: 2rem 1rem;
+    @include accent-card;
 
     h3 {
-        margin-bottom: 1rem;
+        margin: 1rem 0;
     }
 
     .label {
@@ -132,6 +148,7 @@
         padding: 1rem 0;
         border-bottom: 1px solid $color-light-gray;
         margin-bottom: 1rem;
+        @include card;
 
         &:last-child {
             border: 0;
@@ -147,7 +164,7 @@
 
     img {
         display: block;
-        width: 1.5rem;
+        width: 2.5rem;
         margin: 0 auto;
     }
 
@@ -155,7 +172,7 @@
         display: block;
         border-radius: 50%;
         padding: .5rem;
-        width: 4rem;
+        width: 5rem;
         margin: 0 auto;
     }
 
@@ -168,9 +185,9 @@
     }
 
     .label {
-        font-size: .8rem;
+        font-size: .9rem;
         display: block;
-        margin: 0;
+        margin: .5rem 0 0;
     }
 
     .completion {
@@ -178,6 +195,10 @@
 
         .label {
             margin: .25rem 0 0;
+        }
+
+        img {
+            width: 3.5rem;;
         }
     }
 }
@@ -248,15 +269,19 @@
         }
     }
 
-    .task {
-        a {
-            padding-left: 1rem;
-        }
+    .participant-page .details {
+        background: transparent;
     }
 
     .flow-image {
         .large {
             max-width: 10rem;;
         }
+    }
+}
+
+@media (max-width: $screen-tablet) and (min-width: $screen-phone) {
+    .participant-page .details {
+        background: transparent;
     }
 }

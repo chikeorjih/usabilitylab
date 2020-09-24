@@ -1,5 +1,13 @@
 @mixin card {
-    border: 1px solid $brand-primary-light;
+    // border: 1px solid $brand-primary-light;
     margin: 1rem 0;
-    box-shadow: 0px 1px 8px $color-gray;
+    box-shadow: 0px 4px 1px #e4e4e4;
+    background: white;
+}
+
+@mixin accent-card {
+    background: white;
+    // border: 1px solid $brand-primary-orange;
+    box-shadow: 0 0.3rem #e4e4e4;
+    padding: 1rem 1.5rem 2rem;
 }

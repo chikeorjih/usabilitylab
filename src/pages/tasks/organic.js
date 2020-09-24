@@ -17,24 +17,19 @@ const organic = (props) => {
                 <p>The first theme we recorded was what they did from the start. All participants used either the browser address bar or the Google search box and did a keyword search.</p>
                 <p>Analysis of all the search words and phrases revealed the most common Google search terms to be “Hawaii,” “health,” and “insurance” (see word cloud, below).</p>
             </ShowHide>
-            <h3>Search Terms</h3>
-            <img src={wordCloud} alt="word cloud"/>
-            <section>
-                <h4>HMSA Search terms</h4>
-                <ShowHide config={{ trim: 120 }}>
-                    <p>In their first attempt, two participants (one each day) searched “hmsa” without any other terms.</p>
-                    <p>While this only represents about 16% of the usability research participants, it is consistent with Google Analytics of hmsa.com for February – April 2018, where 45% of visitors to hmsa.com come from a Google search of “hmsa”</p>
-                </ShowHide>
-                <div className="interaction">
-                    <span className="number-wrapper">
-                        <img src={femaleSvg}/>
-                        <img src={femaleSvg}/>
-                        <span className="label">Participants</span>
-                    </span>
-                    <p>Entered "hmsa" as their initial search term</p>
-                </div>
-            </section>
-            <section>
+            <h4>HCP Search terms</h4>
+            <ShowHide config={{ trim: 120 }}>
+                <p>In their first attempt, two participants (one each day) searched “hmsa” without any other terms.</p>
+                <p>While this only represents about 16% of the usability research participants, it is consistent with Google Analytics of hmsa.com for February – April 2018, where 45% of visitors to hmsa.com come from a Google search of “hmsa”</p>
+            </ShowHide>
+            <div className="interaction">
+                <span className="number-wrapper">
+                    <img src={femaleSvg}/>
+                    <img src={femaleSvg}/>
+                    <span className="label">Participants</span>
+                </span>
+                <p>Entered "hmsa" as their initial search term</p>
+            </div>
                 <h4>KP Search terms</h4>
                 <ShowHide config={{ trim: 120 }}>
                     <p>As for Kaiser Permanente, two participants on day 2 searched for “kaiser” or “Kaiser Permanente Hawaii”</p>
@@ -48,7 +43,6 @@ const organic = (props) => {
                     </span>
                     <p>Entered "kaiser" or "Kaiser Permanente Hawaii" as their initial search term</p>
                 </div>
-            </section>
             <section>
             <div className="stat-paragraph">
                     <h4>Search Results</h4>
@@ -58,21 +52,21 @@ const organic = (props) => {
                     </div>
                     <div>
                         <span className="stat">25.0<span className="sub">%</span></span>
-                        <p><strong>3</strong> of <strong>12</strong> participants chose to click an HMSA organic search result.</p>
+                        <p><strong>3</strong> of <strong>12</strong> participants chose to click an HCP organic search result.</p>
                     </div>
                 </div>
             </section>
             <section>
                 <div className="stat-paragraph">
-                    <h4>HMSA Path to application</h4>
+                    <h4>HCP Path to application</h4>
                     <div>
                         <span className="stat">63.6<span className="sub">%</span></span>
-                        <p><strong>7</strong> of the <strong>11</strong> who started the path to application (enrollment) on an HMSA.com Web page navigated to the plan comparison chart for individuals and families or 2018 Medicare Advantage plans.</p>
+                        <p><strong>7</strong> of the <strong>11</strong> who started the path to application (enrollment) on an HCP.com Web page navigated to the plan comparison chart for individuals and families or 2018 Medicare Advantage plans.</p>
                     </div>
                 </div>
                 <ShowHide config={{ trim: 220 }}>
-                    <p>When participants reflected on the ease in finding and comparing HMSA health plans, those under 65 years rated it “easy to very easy”, and those 65 and older rated it “easy”. Both groups stated they were “confident” that they were on the right path to finding and applying for health insurance on HMSA.com.</p>
-                    <p>That said, of the 7 who immediately navigated to the plan comparison page, only 3 (1 the first day and 2 the second) clicked to enroll online or download the application without any prompting or assistance from the moderator. When we looked at the overall ease and confidence rating from these three participants, those over 65 rated the ease of finding and applying for a Medicare Akamai Advantage plan on HMSA easier and were more confident than those under 65.</p>
+                    <p>When participants reflected on the ease in finding and comparing HCP health plans, those under 65 years rated it “easy to very easy”, and those 65 and older rated it “easy”. Both groups stated they were “confident” that they were on the right path to finding and applying for health insurance on HCP.com.</p>
+                    <p>That said, of the 7 who immediately navigated to the plan comparison page, only 3 (1 the first day and 2 the second) clicked to enroll online or download the application without any prompting or assistance from the moderator. When we looked at the overall ease and confidence rating from these three participants, those over 65 rated the ease of finding and applying for a Medicare Akamai Advantage plan on HCP easier and were more confident than those under 65.</p>
                 </ShowHide>
             </section>
             <section>
@@ -84,15 +78,15 @@ const organic = (props) => {
                     </div>
                 </div>
                 <ShowHide config={{ trim: 120 }}>
-                    <p>On kpinhawaii.com, those under 65 years found the task slightly less easy than on HMSA.com, but were more confident they were on the right path to finding and applying for a plan. For the participants 65 years and older, they rated finding plans as difficult and were not as confident they were in the right place as they felt on HMSA.com.</p>
+                    <p>On kpinhawaii.com, those under 65 years found the task slightly less easy than on HCP.com, but were more confident they were on the right path to finding and applying for a plan. For the participants 65 years and older, they rated finding plans as difficult and were not as confident they were in the right place as they felt on HCP.com.</p>
                     <p>Of the 7 who navigated to the plan comparison or detail pages, two (1 each day) clicked the “apply” button from one of the plan details page. For kpinhawaii.com, participants under 65 years perceived the ease in finding a plan and deciding to enroll slightly easier and were more confident on average than the participants 65 years and older. In fact, 2 of the 6 participants in the latter group never did find and compare Kaiser Permanente’s Medicare Advantage plans. They only explored the individual and family plans.</p>
                     <p>For reasons we will discuss in greater detail, the number of individual and family plans, and the amount of information and consumer (mis)understanding of key health insurance terms render the task of shopping for and selecting the right health insurance plan for an individual or household very difficult.</p>
                 </ShowHide>
             </section>
             <section>
-                <h4>HMSA Gym Membership</h4>
+                <h4>HCP Gym Membership</h4>
                 <ShowHide config={{ trim: 120 }}>
-                    <p>Three of the 6 participants on day 1 were given the task of finding the gym or fitness center benefits they get with their HMSA health insurance plan. One was able to successfully locate the information, but was unable to determine which fitness centers or gyms she could use. The other two abandoned the task and site before finding the benefit information.</p>
+                    <p>Three of the 6 participants on day 1 were given the task of finding the gym or fitness center benefits they get with their HCP health insurance plan. One was able to successfully locate the information, but was unable to determine which fitness centers or gyms she could use. The other two abandoned the task and site before finding the benefit information.</p>
                     <p>One user who abandoned the task did so when faced with the “Active & Fit” program details (PDF). The other participant who abandoned the task, did so on the “Active & Fit” Web page (https://hmsa.com/well-being/active-and-fit/)when she clicked “1. Find your gym discount”, believing it was a link.</p>
                 </ShowHide>
                 <h4>Kaiser Permanente Gym Membership</h4>
@@ -102,10 +96,10 @@ const organic = (props) => {
                 </ShowHide>
             </section>
             <section>
-                <h4>HMSA Finding New Primary Physician</h4>
+                <h4>HCP Finding New Primary Physician</h4>
                 <ShowHide config={{ trim: 120 }}>
-                    <p>Four of the 6 participants on day 2 were given the task of finding a primary physician who accepts their HMSA health insurance plan. Three were successful locating and using the Find a Doctor search and search results; one abandoned the task.</p>
-                    <p>The participant who abandoned will not use the HMSA site to find a new doctor. Instead, he will ask his friends and family to refer him to doctors they use and then call to find out what insurance that doctor accepts.</p>
+                    <p>Four of the 6 participants on day 2 were given the task of finding a primary physician who accepts their HCP health insurance plan. Three were successful locating and using the Find a Doctor search and search results; one abandoned the task.</p>
+                    <p>The participant who abandoned will not use the HCP site to find a new doctor. Instead, he will ask his friends and family to refer him to doctors they use and then call to find out what insurance that doctor accepts.</p>
                 </ShowHide>
                 <h4>Kaiser Permanente Finding New Primary Physician</h4>
                 <ShowHide config={{ trim: 120 }}>
@@ -114,12 +108,12 @@ const organic = (props) => {
                 </ShowHide>
             </section>
             <section>
-                <h4>Finding account access authorization form (HMSA and KP)</h4>
+                <h4>Finding account access authorization form (HCP and KP)</h4>
                 <ShowHide config={{ trim: 120 }}>
                     <p>If time permitted, we asked participants to locate the form to grand (or revoke) account access on either hmsa.com or kpinhawaii.com.</p>
                     <p>Four of the 12 participants (across the two days) attempted the task on hmsa.com: 3 of them abandoned; 1 was successful. One participant of the 12 attempted the task on kpinhawaii.com. He abandoned the task.</p>
-                    <p>The participants who attempted this task would expect to do this from their member account (behind login) and either add an account user or just give their member login information to the family member (or ask for the member’s login information). If that didn’t work, they expected to call HMSA or Kaiser Permanente to request or revoke access.</p>
-                    <p>The HMSA team believes that the majority of visitors who go to the site to find the form are being directed there by HMSA Customer Support/Service and/or their physician.</p>
+                    <p>The participants who attempted this task would expect to do this from their member account (behind login) and either add an account user or just give their member login information to the family member (or ask for the member’s login information). If that didn’t work, they expected to call HCP or Kaiser Permanente to request or revoke access.</p>
+                    <p>The HCP team believes that the majority of visitors who go to the site to find the form are being directed there by HCP Customer Support/Service and/or their physician.</p>
                 </ShowHide>
             </section>
         </div>

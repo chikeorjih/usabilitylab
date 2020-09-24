@@ -52,9 +52,9 @@ const participant = (props) => {
                 </div>
                 <div className="info">
                     <h2>{currentParticipant.name}</h2>
-                    <span><span className="label">Gender:</span><strong>{currentParticipant.gender}</strong></span>
-                    <span><span className="label">Age:</span><strong>{currentParticipant.age}</strong></span>
-                    <span><span className="label">Occupation:</span><strong>{currentParticipant.occupation}</strong></span>
+                    <span><span className="label">Gender:</span>{currentParticipant.gender}</span>
+                    <span><span className="label">Age:</span>{currentParticipant.age}</span>
+                    <span><span className="label">Occupation:</span>{currentParticipant.occupation}</span>
                 </div>
             </div>
             <div className="company-ratings">
@@ -66,7 +66,7 @@ const participant = (props) => {
                 {tasks}
             </section>
             <section className="flows">
-                <h3>HMSA vs. KP User Flow</h3>
+                <h3>HCP vs. KP User Flow</h3>
                 {flowImages}
             </section>
             {videoSection}

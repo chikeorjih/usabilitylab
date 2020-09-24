@@ -2,10 +2,10 @@ import React from "react";
 import PropTypes from 'prop-types';
 import Link from "gatsby-link";
 
-import happyFace from "../assets/happy-face.svg";
-import sadFace from "../assets/sad-face.svg";
-import mehFace from "../assets/meh-face.svg";
-import xIcon from "../assets/x.svg";
+import happyFace from "../assets/happy.svg";
+import sadFace from "../assets/sad.svg";
+import mehFace from "../assets/straight.svg";
+import xIcon from "../assets/cross.svg";
 import checkIcon from "../assets/check.svg";
 
 const ParticipantTask = (props) => {
