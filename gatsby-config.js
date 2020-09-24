@@ -1,7 +1,7 @@
 module.exports = {
-  pathPrefix: '/hmsa',
+  pathPrefix: '/usabilitylab',
   siteMetadata: {
-    title: 'HMSA Usability Study',
+    title: 'HCP Usability Study',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
