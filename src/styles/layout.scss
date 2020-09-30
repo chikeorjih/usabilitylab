@@ -493,9 +493,13 @@ section {
     }
 
     .expandable {
-        .number span{
-            width: 1.9rem;
-            height: 1.8rem;
+        .number {
+            margin: 0 .5rem;
+
+            span{
+                width: 1.9rem;
+                height: 1.8rem;
+            }
         }
 
         .expandable-initial {
