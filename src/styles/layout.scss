@@ -452,6 +452,10 @@ section {
 }
 
 @media (max-width: $screen-phone) {
+    html {
+        font-size: .8rem;
+    }
+    
     .header {
         .hero-image {
             display: none;
@@ -484,7 +488,7 @@ section {
 
 @media (max-width: $screen-phone-small) and (min-width: 0px) {
     html {
-        font-size: .78rem;
+        font-size: .8rem;
     }
 
     .expandable-wrapper {
