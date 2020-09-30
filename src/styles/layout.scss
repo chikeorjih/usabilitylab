@@ -484,13 +484,22 @@ section {
 
 @media (max-width: $screen-phone-small) and (min-width: 0px) {
     html {
-        font-size: 14px;
+        font-size: .8rem;
+    }
+
+    .expandable-wrapper {
+        padding-left: 1.1rem;
+        margin-left: .5rem;
     }
 
     .expandable {
         .number span{
             width: 1.9rem;
             height: 1.8rem;
+        }
+
+        .expandable-initial {
+            padding: 1rem .5rem;
         }
     }
 
