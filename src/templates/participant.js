@@ -22,10 +22,6 @@ const participant = (props) => {
         return <ParticipantTask task={task} key={i}/>;
     });
 
-    const videos = currentParticipant.clips.map((video,i) => {
-        return <Video video={video} key={i}/>;
-    });
-
     const flowImages = currentParticipant.images.map((img,i) => {
         const link = img.url !== null ? <Link to={{ pathname: `../../tasks/${img.url}`}}>{img.label}</Link> : <h4>{img.label}</h4>
 
@@ -36,13 +32,6 @@ const participant = (props) => {
             </div>
         );
     });
-
-    const videoSection =  currentParticipant.clips.length > 0 ? 
-        <section className="videos">
-            <h3>Videos</h3>
-            {videos}
-        </section>
-        : null;
 
     return (
         <div className="participant-page">  
@@ -69,7 +58,6 @@ const participant = (props) => {
                 <h3>HCP vs. KP User Flow</h3>
                 {flowImages}
             </section>
-            {videoSection}
         </div>
     );
 };
